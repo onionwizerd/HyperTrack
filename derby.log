@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Apr 30 09:43:02 CAT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0154-661e-e68d-000006ba6e80 
+on database directory C:\Users\Josh\Documents\Software Projects\HyperTrack\testDB with class loader sun.misc.Launcher$AppClassLoader@5cad8086 
+Loaded from file:/C:/Users/Josh/Documents/Software%20Projects/HyperTrack/src/com/company/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_91-b14
+user.dir=C:\Users\Josh\Documents\Software Projects\HyperTrack
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
