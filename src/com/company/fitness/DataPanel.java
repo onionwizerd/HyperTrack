@@ -64,7 +64,6 @@ public class DataPanel extends XPanel implements PanelModel{
             excep.printStackTrace();
         }
 
-
         add(dataTable, BorderLayout.CENTER);
 
     }
