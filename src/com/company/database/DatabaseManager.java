@@ -26,7 +26,7 @@ public class DatabaseManager implements Runnable{
 
     private String framework = "embedded";
     private String protocol = "jdbc:derby:";
-    private String databaseName = "testDB";
+    private String databaseName = "usr\\database";
 
     private DatabaseManager() {
     }

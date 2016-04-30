@@ -10,10 +10,16 @@ import java.awt.*;
  */
 public class FitnessPanel extends XTabbedPane implements PanelModel{
 
+    public FitnessPanel() {
+        init();
+    }
+
     @Override
     public void init() {
         setBackground(Color.WHITE);
-        setLayout(new BorderLayout());
+
+        add("Data", new DataPanel("Running"));
+
 
     }
 }

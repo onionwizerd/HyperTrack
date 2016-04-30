@@ -14,7 +14,7 @@ public class ConnectionManager implements Runnable{
 
     private String driver = "org.apache.derby.jdbc.EmbeddedDriver";
     private String protocol = "jdbc:derby:";
-    private String databaseName = "testDB";
+    private String databaseName = "usr\\database";
 
     public ConnectionManager() {
     }

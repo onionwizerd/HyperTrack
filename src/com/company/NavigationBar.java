@@ -7,6 +7,7 @@ import SwingX.XToolBar;
 import com.company.calculators.CalculatorPanel;
 import com.company.database.DatabaseManager;
 import com.company.database.InteractionManager;
+import com.company.fitness.FitnessPanel;
 import com.company.nutrition.NutritionPanel;
 import com.company.news.NewsFeedPanel;
 
@@ -145,8 +146,8 @@ public class NavigationBar extends XToolBar{
         runBtn.setToolTipText("Run");
         runBtn.addActionListener((ActionEvent evt) -> {
             MainFrame mainFrame = Main.getMainFrame();
-            CalculatorPanel calculatorPanel = CalculatorPanel.getInstance();
-            mainFrame.setContent(calculatorPanel);
+            FitnessPanel fitnessPanel = new FitnessPanel();
+            mainFrame.setContent(fitnessPanel);
         });
 
         BufferedImage swimIcon = null;
