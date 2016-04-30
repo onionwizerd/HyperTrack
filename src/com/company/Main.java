@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.database.Creator;
 import com.company.database.DatabaseManager;
 
 /**
@@ -13,8 +14,10 @@ public class Main {
     public static void main(String[] args) {
 
         //Connect to database
-        DatabaseManager databaseManager = DatabaseManager.getInstance();
-        databaseManager.connect();
+        //DatabaseManager databaseManager = DatabaseManager.getInstance();
+        //databaseManager.connect();
+
+        Creator creator = new Creator();
 
         mainFrame.init();
     }
