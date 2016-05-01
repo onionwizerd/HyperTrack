@@ -57,10 +57,6 @@ public class GraphItem extends JXPanel implements PanelModel{
         dropShadow.setShowTopShadow(true);
         setBorder(dropShadow);
 
-        Border border = this.getBorder();
-        Border margin = new EmptyBorder(10,30,10,30);
-        setBorder(new CompoundBorder(border, margin));
-
         JFreeChart chart = ChartFactory.createLineChart(chartTitle, xAxisLabel, yAxisLabel, dataset,
                 PlotOrientation.VERTICAL, false, false, false);
         chart.setBackgroundPaint(Color.WHITE);

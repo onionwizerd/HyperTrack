@@ -1,22 +1,23 @@
 package com.company.fitness;
 
 import SwingX.XPanel;
+import SwingX.XScrollPanel;
 import com.company.PanelModel;
 import com.company.database.DatabaseManager;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 import java.awt.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Vector;
 
 /**
  * Created by Josh on 4/30/2016.
  */
-public class DataPanel extends XPanel implements PanelModel{
+public class DataPanel extends XScrollPanel implements PanelModel{
 
     String tableName = "";
     DefaultTableModel dataModel;
@@ -29,9 +30,12 @@ public class DataPanel extends XPanel implements PanelModel{
     @Override
     public void init() {
         setBackground(Color.WHITE);
-        setLayout(new BorderLayout());
 
         JTable dataTable = new JTable();
+        dataTable.setBackground(Color.WHITE);
+
+        dataTable.getTableHeader().setBackground(Color.WHITE);
+
 
         dataModel = (DefaultTableModel)dataTable.getModel();
 
@@ -64,7 +68,7 @@ public class DataPanel extends XPanel implements PanelModel{
             excep.printStackTrace();
         }
 
-        add(dataTable, BorderLayout.CENTER);
+        setViewportView(dataTable);
 
     }
 

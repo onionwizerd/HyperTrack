@@ -3,7 +3,6 @@ package com.company.fitness;
 import SwingX.XPanel;
 import SwingX.XScrollPanel;
 import com.company.PanelModel;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -33,6 +32,7 @@ public class TrackingPanel extends XScrollPanel implements PanelModel{
 
         viewPortPanel.add(graphFactory.createGraphItem("Distance", "distance", CategoryType.INT ,"Date", "Distance"));
         viewPortPanel.add(graphFactory.createGraphItem("Time", "time", CategoryType.TIME, "Date", "Time"));
+        viewPortPanel.add(graphFactory.createGraphItem("Speed", "speed", CategoryType.INT, "Date", "Speed"));
 
         setViewportView(viewPortPanel);
 
