@@ -35,7 +35,7 @@ public class DataPanel extends XPanel implements PanelModel{
 
         dataModel = (DefaultTableModel)dataTable.getModel();
 
-        String columnHeaders[] = {"Date", "Distance", "Time", "Speed"};
+        Object columnHeaders[] = new Object[]{"Date", "Distance", "Time", "Speed"};
         dataModel.setColumnIdentifiers(columnHeaders);
 
         Object rowData[] = new Object[4];
@@ -68,26 +68,7 @@ public class DataPanel extends XPanel implements PanelModel{
 
     }
 
-    private int getRecordCount(){
-
-        int recordCount = 0;
-
-        try {
-
-            Connection connection = DatabaseManager.getInstance().getConnectionManager().getConnection();
-
-            PreparedStatement ps = connection.prepareStatement("SELECT COUNT(*) AS rowCount FROM Running");
-
-            ResultSet rs = ps.executeQuery();
-
-            System.out.println("Recourd count = "+  rs.getInt(1));
-
-        }catch (SQLException sqlExcep){
-            sqlExcep.printStackTrace();
-        }catch (Exception excep){
-            excep.printStackTrace();
-        }
-
-        return recordCount;
+    public DefaultTableModel getDataModel() {
+        return dataModel;
     }
 }

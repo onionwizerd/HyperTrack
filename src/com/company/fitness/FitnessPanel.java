@@ -19,6 +19,7 @@ public class FitnessPanel extends XTabbedPane implements PanelModel{
         setBackground(Color.WHITE);
 
         add("Data", new DataPanel("Running"));
+        add("Tracking", new TrackingPanel("Running"));
 
 
     }
