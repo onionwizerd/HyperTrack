@@ -83,9 +83,9 @@ public class MainFrame extends XFrame{
     
     public void setContent(JComponent contentPanel){
         if(this.contentPanel != null){
-          mainPanel.remove(contentPanel);
+            mainPanel.remove(this.contentPanel);
+            this.contentPanel = null;
         }
-        mainPanel.refresh();
 
         this.contentPanel = contentPanel;
         

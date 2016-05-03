@@ -52,18 +52,17 @@ public class DataEntryFrame extends JDialog{
         }
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setSize(new Dimension(375, 200));
+        setSize(new Dimension(375, 250));
         setLocationRelativeTo(null);
         setBackground(Color.WHITE);
         setIconImage(bufferedImageIcon);
         setTitle("Enter New Record");
 
         // Date Entry
-        JLabel dateLabel = new JLabel("Date:                  ");
+        JLabel dateLabel = new JLabel("Date: (YYYY-MM-DD) ");
         dateLabel.setFont(new Font(dateLabel.getName(), Font.PLAIN, 16));
-
-        JLabel dateUnitLabel = new JLabel("                          ");
-        dateUnitLabel.setFont(new Font(dateLabel.getName(), Font.PLAIN, 16));
+        dateLabel.setMinimumSize(new Dimension(0, 28));
+        dateLabel.setMaximumSize(new Dimension(500, 28));
 
         dateModel = new UtilDateModel();
         Properties properties = new Properties();
@@ -76,28 +75,27 @@ public class DataEntryFrame extends JDialog{
 
         XPanel datePanel = new XPanel();
         datePanel.setLayout(new BoxLayout(datePanel, BoxLayout.X_AXIS));
-        datePanel.add(dateLabel);
         datePanel.add(datePicker);
-        datePanel.add(dateUnitLabel);
 
         // Distance Entry
-        JLabel distanceLabel = new JLabel("Distance:           ");
+        JLabel distanceLabel = new JLabel("Distance (Km.M): ");
         distanceLabel.setFont(new Font(distanceLabel.getName(), Font.PLAIN, 16));
-
-        JLabel distanceUnitLabel = new JLabel("  (Km.M)                ");
-        distanceUnitLabel.setFont(new Font(dateLabel.getName(), Font.PLAIN, 16));
+        distanceLabel.setMinimumSize(new Dimension(0, 28));
+        distanceLabel.setMaximumSize(new Dimension(500, 28));
 
         SpinnerNumberModel  kilometersSpinnerModel = new SpinnerNumberModel(0, 0,   9999,  1);
         kilometersSpinner = new JSpinner(kilometersSpinnerModel);
         kilometersSpinner.setBackground(Color.WHITE);
         kilometersSpinner.setMaximumSize(new Dimension(75, 28));
+        kilometersSpinner.setMinimumSize(new Dimension(75, 28));
         kilometersSpinner.setFont(new Font(kilometersSpinner.getName(), Font.PLAIN, 16));
         kilometersSpinner.addChangeListener(e -> {calculateSpeed();});
 
         SpinnerNumberModel  metersSpinnerModel = new SpinnerNumberModel(0, 0,   1000,  1);
         metersSpinner = new JSpinner(metersSpinnerModel);
         metersSpinner.setBackground(Color.WHITE);
-        metersSpinner.setMaximumSize(new Dimension(50, 28));
+        metersSpinner.setMaximumSize(new Dimension(75, 28));
+        metersSpinner.setMinimumSize(new Dimension(75, 28));
         metersSpinner.setFont(new Font(metersSpinner.getName(), Font.PLAIN, 16));
         metersSpinner.addChangeListener(e -> {
             if(Integer.parseInt(metersSpinner.getValue().toString()) == 1000){
@@ -109,14 +107,17 @@ public class DataEntryFrame extends JDialog{
 
         XPanel distancePanel = new XPanel();
         distancePanel.setLayout(new BoxLayout(distancePanel, BoxLayout.X_AXIS));
-        distancePanel.add(distanceLabel);
         distancePanel.add(kilometersSpinner);
         distancePanel.add(new XDivider(2, 0));
         distancePanel.add(metersSpinner);
-        distancePanel.add(distanceUnitLabel);
 
 
         // Time Entry
+        JLabel timeLabel = new JLabel("Time (HH:MM:SS): ");
+        timeLabel.setFont(new Font(timeLabel.getName(), Font.PLAIN, 16));
+        timeLabel.setMinimumSize(new Dimension(0, 28));
+        timeLabel.setMaximumSize(new Dimension(500, 28));
+
         SpinnerNumberModel hoursSpinnerModel = new SpinnerNumberModel(0, 0,   24,  1);
         hoursSpinner = new JSpinner(hoursSpinnerModel);
         hoursSpinner.setBackground(Color.WHITE);
@@ -150,29 +151,20 @@ public class DataEntryFrame extends JDialog{
             calculateSpeed();
         });
 
-        JLabel timeLabel = new JLabel("Time:                  ");
-        timeLabel.setFont(new Font(timeLabel.getName(), Font.PLAIN, 16));
-
-        JLabel timeUnitLabel = new JLabel("  (HH:MM:SS)   ");
-        timeUnitLabel.setFont(new Font(timeUnitLabel.getName(), Font.PLAIN, 16));
-
         XPanel timePanel = new XPanel();
         timePanel.setLayout(new BoxLayout(timePanel, BoxLayout.X_AXIS));
-        timePanel.add(timeLabel);
         timePanel.add(hoursSpinner);
         timePanel.add(new XDivider(2, 0));
         timePanel.add(minutesSpinner);
         timePanel.add(new XDivider(2, 0));
         timePanel.add(secondsSpinner);
-        timePanel.add(timeUnitLabel);
 
 
         // Speed Entry
-        JLabel speedLabel = new JLabel("Speed:               ");
+        JLabel speedLabel = new JLabel("Speed (Km/h): ");
         speedLabel.setFont(new Font(speedLabel.getName(), Font.PLAIN, 16));
-
-        JLabel speedUnitLabel = new JLabel("  (Km/h)            ");
-        speedUnitLabel.setFont(new Font(speedUnitLabel.getName(), Font.PLAIN, 16));
+        speedLabel.setMinimumSize(new Dimension(0, 28));
+        speedLabel.setMaximumSize(new Dimension(500, 28));
 
         speedField = new JTextField();
         speedField.setMaximumSize(new Dimension(150, 28));
@@ -182,8 +174,6 @@ public class DataEntryFrame extends JDialog{
         speedPanel.setLayout(new BoxLayout(speedPanel, BoxLayout.X_AXIS));
         speedPanel.add(speedLabel);
         speedPanel.add(speedField);
-        speedPanel.add(speedUnitLabel);
-
 
         XButton acceptBtn = new XButton("Accept");
         acceptBtn.addActionListener(e -> {
@@ -231,20 +221,52 @@ public class DataEntryFrame extends JDialog{
         finaliseButtonsPanel.add(new XDivider(5, 0));
         finaliseButtonsPanel.add(discardBtn);
 
+        XPanel labelPanel = new XPanel();
+        labelPanel.setLayout(new BoxLayout(labelPanel, BoxLayout.Y_AXIS));
+        labelPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        labelPanel.setMaximumSize(new Dimension(150, 500));
+        labelPanel.setMinimumSize(new Dimension(150, 0));
+
+        labelPanel.add(new XDivider(0, 5));
+        labelPanel.add(dateLabel);
+        labelPanel.add(new XDivider(0, 5));
+        labelPanel.add(distanceLabel);
+        labelPanel.add(new XDivider(0, 5));
+        labelPanel.add(timeLabel);
+        labelPanel.add(new XDivider(0, 5));
+        labelPanel.add(speedLabel);
+
+        XPanel dataEntryPanel = new XPanel();
+        dataEntryPanel.setLayout(new BoxLayout(dataEntryPanel, BoxLayout.Y_AXIS));
+        dataEntryPanel.setAlignmentX(Component.RIGHT_ALIGNMENT);
+        dataEntryPanel.setMaximumSize(new Dimension(350, 500));
+        dataEntryPanel.setMinimumSize(new Dimension(350, 0));
+
+        dataEntryPanel.add(new XDivider(0, 5));
+        dataEntryPanel.add(datePanel);
+        dataEntryPanel.add(new XDivider(0, 5));
+        dataEntryPanel.add(distancePanel);
+        dataEntryPanel.add(new XDivider(0, 5));
+        dataEntryPanel.add(timePanel);
+        dataEntryPanel.add(new XDivider(0, 5));
+        dataEntryPanel.add(speedPanel);
+
+
+        XPanel containerPanel = new XPanel();
+        containerPanel.setLayout(new BoxLayout(containerPanel, BoxLayout.X_AXIS));
+
+        containerPanel.add(new XDivider(15,0));
+        containerPanel.add(labelPanel);
+        containerPanel.add(dataEntryPanel);
+
         XPanel contentPanel = new XPanel();
         contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
-        contentPanel.setAlignmentY(Component.LEFT_ALIGNMENT);
 
-        contentPanel.add(new XDivider(0, 5));
-        contentPanel.add(datePanel);
-        contentPanel.add(new XDivider(0, 5));
-        contentPanel.add(distancePanel);
-        contentPanel.add(new XDivider(0, 5));
-        contentPanel.add(timePanel);
-        contentPanel.add(new XDivider(0, 5));
-        contentPanel.add(speedPanel);
-        contentPanel.add(new XDivider(0, 5));
+        contentPanel.add(new XDivider(0,15));
+        contentPanel.add(containerPanel);
+        contentPanel.add(new XDivider(0,5));
         contentPanel.add(finaliseButtonsPanel);
+        contentPanel.add(new XDivider(0,15));
 
         if(edit == true){
             setTitle("Edit Record");
