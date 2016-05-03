@@ -6,6 +6,7 @@ import com.company.PanelModel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 /**
  * Created by Josh on 2016-04-14.
@@ -21,7 +22,14 @@ public class RecipesPanel extends XPanel implements PanelModel{
 
     @Override
     public void init() {
-            setLayout(new BorderLayout());
+        setLayout(new BorderLayout());
+
+
+        File rootDirectory = new File("usr\\recipes");
+        System.out.println(rootDirectory.exists());
+        FileTree recipeTree = new FileTree(rootDirectory, "Recipes");
+
+        add(recipeTree, BorderLayout.WEST);
 
         /*
         recipeFactory = new RecipeFactory();

@@ -1,5 +1,6 @@
 package com.company.nutrition.recipe;
 
+import SwingX.XPanel;
 import SwingX.XScrollPanel;
 
 import javax.swing.*;
@@ -14,11 +15,14 @@ import java.util.Vector;
 /**
  * Created by Josh on 5/3/2016.
  */
-public class FileTree extends JPanel{
+public class FileTree extends XPanel {
 
-    /** Construct a FileTree */
-    public FileTree(File rootDirectory) {
+    private String rootDirectoryName = null;
+
+    public FileTree(File rootDirectory, String rootDirectoryName) {
         setLayout(new BorderLayout());
+
+        this.rootDirectoryName = rootDirectoryName;
 
         JTree fileTree = new JTree(addNodes(null, rootDirectory));
 
@@ -32,7 +36,6 @@ public class FileTree extends JPanel{
         });
 
 
-
         XScrollPanel scrollpane = new XScrollPanel();
         scrollpane.getViewport().add(fileTree);
         add(BorderLayout.CENTER, scrollpane);
@@ -42,7 +45,7 @@ public class FileTree extends JPanel{
 
         String curPath = rootDirectory.getPath();
 
-        DefaultMutableTreeNode curDirectory = new DefaultMutableTreeNode(curPath);
+        DefaultMutableTreeNode curDirectory = new DefaultMutableTreeNode(rootDirectoryName);
 
         Vector dirList = new Vector();
 
