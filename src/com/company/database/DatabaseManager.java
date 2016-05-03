@@ -44,35 +44,6 @@ public class DatabaseManager implements Runnable{
         return connectionManager;
     }
 
-    public void test(){
-
-        while (connectionManager.getConnection() == null){
-            //Waiting for connection
-        }
-        connection = connectionManager.getConnection();
-
-
-        try {
-            PreparedStatement ps1 = connection.prepareStatement("create table tabel1(num int, string varchar(40))");
-            ps1.execute();
-
-            PreparedStatement p2 = connection.prepareStatement("insert into tabel1 values (1956,'Webster St.')");
-            p2.executeUpdate();
-
-
-            PreparedStatement ps = connection.prepareStatement("select * from tabel1");
-
-            ResultSet rs = ps.executeQuery();
-            while(rs.next()){
-                System.out.println(rs.getString("num"));
-            }
-
-
-        }catch (SQLException sqlExcep){
-            sqlExcep.printStackTrace();
-        }
-
-    }
 
     @Override
     public void run() {

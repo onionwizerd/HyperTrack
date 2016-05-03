@@ -31,7 +31,7 @@ public class RecipeFactory {
             DocumentBuilder docBuilder = (DocumentBuilderFactory.newInstance())
                     .newDocumentBuilder();
 
-            Document doc = docBuilder.parse(new File("recipes.xml"));
+            Document doc = docBuilder.parse(new File("usr\\recipes.xml"));
             doc.normalize();
 
             Node rootNode = doc.getDocumentElement();

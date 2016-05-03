@@ -2,8 +2,6 @@ package com.company.fitness;
 
 import SwingX.XTabbedPane;
 import com.company.PanelModel;
-
-import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
@@ -12,21 +10,34 @@ import java.awt.*;
  */
 public class FitnessPanel extends XTabbedPane implements PanelModel{
 
-    public FitnessPanel() {
+    private AnalysisPanel analysisPanel;
+    private DataPanel dataPanel;
+    private String tableName;
+
+    public FitnessPanel(String tableName) {
+        this.tableName = tableName;
         init();
     }
 
     @Override
     public void init() {
+
         setBackground(Color.WHITE);
         setBorder(new EmptyBorder(0,0,0,0));
-        UIManager.put("TabbedPane.selected", Color.white);
+        setUI();
 
-        add("Data", new DataPanel("Running"));
-        add("Tracking", new TrackingPanel("Running"));
+        analysisPanel = new AnalysisPanel(tableName);
+        dataPanel = new DataPanel(tableName);
+
+        add("Data", dataPanel);
+        add("Analysis", analysisPanel);
 
         setOpaque(true);
 
-
     }
+
+    public void update(){
+        analysisPanel.updateGraphs();
+    }
+
 }

@@ -11,7 +11,6 @@ import java.sql.SQLException;
 public class ConnectionManager implements Runnable{
 
     private Connection connection;
-
     private String driver = "org.apache.derby.jdbc.EmbeddedDriver";
     private String protocol = "jdbc:derby:";
     private String databaseName = "usr\\database";
@@ -35,9 +34,6 @@ public class ConnectionManager implements Runnable{
 
             connection = DriverManager.getConnection(protocol + databaseName);
             System.out.println("Established connection to " + databaseName);
-
-            connection.setAutoCommit(false);
-            System.out.println("Auto commit set to false");
 
         }catch (SQLException sqlExcep){
             sqlExcep.printStackTrace();

@@ -2,13 +2,14 @@ package com.company;
 
 import com.company.database.DatabaseManager;
 
+
 /**
  *
  * @author Josh
  */
 public class Main {
     
-    static MainFrame mainFrame = new MainFrame();
+    private static MainFrame mainFrame = new MainFrame();
 
     public static void main(String[] args) {
 
@@ -16,6 +17,7 @@ public class Main {
         DatabaseManager databaseManager = DatabaseManager.getInstance();
         databaseManager.connect();
 
+        Configuration.init();
         mainFrame.init();
     }
 

@@ -22,6 +22,7 @@ public class XScrollPanel extends JScrollPane{
     
     private void init(){
         setBackground(Color.WHITE);
+        setBorder(null);
     }
     
     public void refresh(){

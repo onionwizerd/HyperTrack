@@ -1,6 +1,7 @@
 
 package com.company.news;
 
+import SwingX.XDivider;
 import SwingX.XPanel;
 import SwingX.XScrollPanel;
 import com.company.PanelModel;
@@ -85,10 +86,7 @@ public class NewsFeedPanel extends XScrollPanel implements PanelModel, Runnable{
             progressBar.setValue(newsItemFactory.getCurrentItem());
             viewPortPanel.add(newsItem);
 
-            JPanel divider = new JPanel();
-            divider.setMaximumSize(new Dimension(0, 90));
-            divider.setMinimumSize(new Dimension(0, 90));
-            viewPortPanel.add(divider);
+            viewPortPanel.add(new XDivider(0, 90));
 
         }
 

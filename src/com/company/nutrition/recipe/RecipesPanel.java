@@ -10,7 +10,7 @@ import java.awt.*;
 /**
  * Created by Josh on 2016-04-14.
  */
-public class RecipesPanel extends XScrollPanel implements PanelModel{
+public class RecipesPanel extends XPanel implements PanelModel{
 
     XPanel viewPortPanel;
     RecipeFactory recipeFactory;
@@ -21,8 +21,9 @@ public class RecipesPanel extends XScrollPanel implements PanelModel{
 
     @Override
     public void init() {
-//        setLayout(new BorderLayout());
+            setLayout(new BorderLayout());
 
+        /*
         recipeFactory = new RecipeFactory();
 
         viewPortPanel = new XPanel();
@@ -45,6 +46,7 @@ public class RecipesPanel extends XScrollPanel implements PanelModel{
         }
 
         setViewportView(viewPortPanel);
+        */
 
     }
 }

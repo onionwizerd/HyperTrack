@@ -3,6 +3,7 @@ package SwingX;
 
 import java.awt.Color;
 import javax.swing.JTabbedPane;
+import javax.swing.plaf.basic.BasicTabbedPaneUI;
 
 /**
  *
@@ -24,7 +25,7 @@ public class XTabbedPane extends JTabbedPane {
         init();
     }
     
-     private void init(){
+    private void init(){
         setBackground(Color.WHITE);
     }
     
@@ -36,6 +37,20 @@ public class XTabbedPane extends JTabbedPane {
         repaint();
         revalidate();
         validate();
+    }
+
+    public void setUI(){
+        setUI(new BasicTabbedPaneUI() {
+            @Override
+            protected void installDefaults() {
+                super.installDefaults();
+                highlight = Color.LIGHT_GRAY;
+                lightHighlight = Color.LIGHT_GRAY;
+                shadow = Color.LIGHT_GRAY;
+                darkShadow = Color.WHITE;
+                focus = Color.WHITE;
+            }
+        });
     }
     
 }

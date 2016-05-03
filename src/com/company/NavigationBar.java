@@ -11,15 +11,14 @@ import com.company.fitness.FitnessPanel;
 import com.company.nutrition.NutritionPanel;
 import com.company.news.NewsFeedPanel;
 
-import java.awt.Color;
-import java.awt.Insets;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
+import javax.swing.*;
 
 /**
  * 
@@ -146,7 +145,7 @@ public class NavigationBar extends XToolBar{
         runBtn.setToolTipText("Run");
         runBtn.addActionListener((ActionEvent evt) -> {
             MainFrame mainFrame = Main.getMainFrame();
-            FitnessPanel fitnessPanel = new FitnessPanel();
+            FitnessPanel fitnessPanel = new FitnessPanel("Running");
             mainFrame.setContent(fitnessPanel);
         });
 
@@ -165,8 +164,8 @@ public class NavigationBar extends XToolBar{
         swimBtn.setToolTipText("Swim");
         swimBtn.addActionListener((ActionEvent evt) -> {
             MainFrame mainFrame = Main.getMainFrame();
-            CalculatorPanel calculatorPanel = CalculatorPanel.getInstance();
-            mainFrame.setContent(calculatorPanel);
+            FitnessPanel fitnessPanel = new FitnessPanel("Swimming");
+            mainFrame.setContent(fitnessPanel);
         });
 
         BufferedImage cycleIcon = null;
@@ -183,14 +182,18 @@ public class NavigationBar extends XToolBar{
         cycleBtn.setIcon(new ImageIcon(cycleIcon));
         cycleBtn.setToolTipText("Cycle");
         cycleBtn.addActionListener((ActionEvent evt) -> {
-
+            MainFrame mainFrame = Main.getMainFrame();
+            FitnessPanel fitnessPanel = new FitnessPanel("Cycling");
+            mainFrame.setContent(fitnessPanel);
         });
 
+        /*
         XButton testBtn = new XButton("Test");
         testBtn.setHoverEffect(Color.LIGHT_GRAY);
         testBtn.addActionListener((ActionEvent evt) -> {
 
         });
+        */
 
         add(newsFeedBtn);
         add(runBtn);
@@ -199,7 +202,7 @@ public class NavigationBar extends XToolBar{
         add(toolsBtn);
         add(nutritionBtn);
         add(settingsBtn);
-        add(testBtn);
+        //add(testBtn);
     }
 
     

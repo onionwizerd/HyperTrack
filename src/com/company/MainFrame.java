@@ -36,9 +36,9 @@ import javax.swing.*;
  * 
  */
 
-public class MainFrame {
+public class MainFrame extends XFrame{
     
-    private XFrame frame = new XFrame();
+    //private XFrame frame = new XFrame();
     private BufferedImage bufferedImageIcon;
     private XPanel mainPanel = new XPanel();
     private JComponent contentPanel;
@@ -53,16 +53,17 @@ public class MainFrame {
             e.printStackTrace();
         }
 
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setSize(new Dimension(950, 750));
-        frame.setLayout(new FlowLayout());
-        frame.setLocationRelativeTo(null);
-        frame.setBackground(Color.WHITE);
-        frame.setIconImage(bufferedImageIcon);
-        frame.setTitle("Fitness Tracker");
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setSize(new Dimension(950, 750));
+        setLayout(new FlowLayout());
+        setLocationRelativeTo(null);
+        setBackground(Color.WHITE);
+        setIconImage(bufferedImageIcon);
+        setTitle("HyperTrack");
+        setResizable(false);
 
         mainPanel.setLayout(new BorderLayout());
-        mainPanel.setMinimumSize(frame.getSize());
+        mainPanel.setMinimumSize(this.getSize());
         mainPanel.setBackground(Color.WHITE);
 
         navBar = NavigationBar.getInstance();
@@ -75,9 +76,9 @@ public class MainFrame {
         mainPanel.add(navBar, BorderLayout.WEST);
         //setContent(NewsFeedPanel.getInstance());
 
-        frame.setContentPane(mainPanel);
-        frame.setVisible(true);
-        frame.toFront();
+        setContentPane(mainPanel);
+        setVisible(true);
+        toFront();
     }
     
     public void setContent(JComponent contentPanel){

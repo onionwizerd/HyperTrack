@@ -15,5 +15,6 @@
     <orderEntry type="library" name="swingx-all-1.6.4" level="project" />
     <orderEntry type="library" name="derbyclient" level="project" />
     <orderEntry type="library" name="derby" level="project" />
+    <orderEntry type="library" name="jdatepicker-1.3.4" level="project" />
   </component>
 </module>
