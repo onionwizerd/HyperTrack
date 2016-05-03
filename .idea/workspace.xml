@@ -7,84 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/add_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/delete_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/edit_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/export.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/export_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/icon64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/jdatepicker-1.3.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/HyperTrack_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/XDivider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/XTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/DataEntryFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/DateLabelFormatter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/RecordContextMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/fitness/AnalysisPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/fitness/StatisticPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/FileTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/usr/recipes.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/CategoryType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/GraphFactory$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/GraphFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/GraphItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/TrackingPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/utils/Converter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/recipes.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/company/fitness/TrackingPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/usr/database/seg0/c490.dat" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/fitness/CategoryType.java" afterPath="$PROJECT_DIR$/src/com/company/data/CategoryType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/fitness/GraphFactory.java" afterPath="$PROJECT_DIR$/src/com/company/graph/GraphFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/fitness/GraphItem.java" afterPath="$PROJECT_DIR$/src/com/company/graph/GraphItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/XScrollPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/XScrollPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/XTabbedPane.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/XTabbedPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/MainFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/NavigationBar.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/NavigationBar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/database/ConnectionManager.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/database/ConnectionManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/database/DatabaseManager.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/database/DatabaseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/FitnessPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/FitnessPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/img/icon.png" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/img/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/news/NewsFeedPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/news/NewsFeedPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipeFactory.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipeFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/img/icon.png" afterPath="$PROJECT_DIR$/src/com/company/img/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/usr/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c20.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c20.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c31.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c31.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c41.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c41.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c51.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c51.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c60.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c60.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c71.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c71.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c81.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c81.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c90.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/ca1.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/ca1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/cb1.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/cb1.dat" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/derby.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c490.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/derby.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/recipes.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/db.lck" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/db.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c20.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c20.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c31.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c31.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c41.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c41.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c51.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c51.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c60.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c60.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c71.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c71.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c81.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c81.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/c90.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/ca1.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/ca1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/cb1.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/seg0/cb1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyperTrack.iml" afterPath="$PROJECT_DIR$/HyperTrack.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwingX/XScrollPanel.java" afterPath="$PROJECT_DIR$/src/SwingX/XScrollPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwingX/XTabbedPane.java" afterPath="$PROJECT_DIR$/src/SwingX/XTabbedPane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MainFrame.java" afterPath="$PROJECT_DIR$/src/com/company/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/NavigationBar.java" afterPath="$PROJECT_DIR$/src/com/company/NavigationBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/database/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/com/company/database/ConnectionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/database/DatabaseManager.java" afterPath="$PROJECT_DIR$/src/com/company/database/DatabaseManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" afterPath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/fitness/FitnessPanel.java" afterPath="$PROJECT_DIR$/src/com/company/fitness/FitnessPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/news/NewsFeedPanel.java" afterPath="$PROJECT_DIR$/src/com/company/news/NewsFeedPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipeFactory.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipeFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/derby.log" afterPath="$PROJECT_DIR$/usr/derby.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/FileTree.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/FileTree.java" />
     </list>
     <ignored path="HyperTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,9 +81,11 @@
       <file leaf-file-name="FileTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/FileTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="529">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/com/company/data/DataEntryFrame.java" />
         <option value="$PROJECT_DIR$/src/com/company/NavigationBar.java" />
         <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/FileTree.java" />
       </list>
     </option>
   </component>
@@ -258,6 +203,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HyperTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HyperTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HyperTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,6 +320,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\out\artifacts\HyperTrack_jar\usr" />
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\com\company\img" />
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\com\company\lib" />
       <recent name="C:\Users\Josh\Documents\Software Projects\HyperTrack\src\com\company\lib" />
@@ -843,6 +803,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +865,7 @@
         <state relative-caret-position="325">
           <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -980,8 +941,8 @@
         <state relative-caret-position="289">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -991,7 +952,7 @@
         <state relative-caret-position="527">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1009,7 +970,7 @@
         <state relative-caret-position="291">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding>
-            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#3981#3982#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1096,9 +1057,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/FileTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="529">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
