@@ -1,4 +1,4 @@
-package com.company.nutrition.recipe;
+package SwingX;
 
 import SwingX.XPanel;
 import SwingX.XScrollPanel;
@@ -15,11 +15,11 @@ import java.util.Vector;
 /**
  * Created by Josh on 5/3/2016.
  */
-public class FileTree extends XPanel {
+public class XFileTree extends XPanel {
 
     private String rootDirectoryName = null;
 
-    public FileTree(File rootDirectory, String rootDirectoryName) {
+    public XFileTree(File rootDirectory, String rootDirectoryName) {
         setLayout(new BorderLayout());
 
         this.rootDirectoryName = rootDirectoryName;

@@ -1,10 +1,9 @@
 package com.company.nutrition.recipe;
 
+import SwingX.XFileTree;
 import SwingX.XPanel;
-import SwingX.XScrollPanel;
 import com.company.PanelModel;
 
-import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
@@ -27,7 +26,7 @@ public class RecipesPanel extends XPanel implements PanelModel{
 
         File rootDirectory = new File("usr\\recipes");
         System.out.println(rootDirectory.exists());
-        FileTree recipeTree = new FileTree(rootDirectory, "Recipes");
+        XFileTree recipeTree = new XFileTree(rootDirectory, "Recipes");
 
         add(recipeTree, BorderLayout.WEST);
 
