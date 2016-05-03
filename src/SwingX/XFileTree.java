@@ -18,20 +18,20 @@ import java.util.Vector;
 public class XFileTree extends XPanel {
 
     private String rootDirectoryName = null;
+    private JTree fileTree;
 
     public XFileTree(File rootDirectory, String rootDirectoryName) {
         setLayout(new BorderLayout());
 
         this.rootDirectoryName = rootDirectoryName;
 
-        JTree fileTree = new JTree(addNodes(null, rootDirectory));
+        fileTree = new JTree(addNodes(null, rootDirectory));
 
         // Add a listener
         fileTree.addTreeSelectionListener(new TreeSelectionListener() {
             public void valueChanged(TreeSelectionEvent e) {
                 DefaultMutableTreeNode node = (DefaultMutableTreeNode) e
                         .getPath().getLastPathComponent();
-                System.out.println("You selected " + node);
             }
         });
 
@@ -43,9 +43,9 @@ public class XFileTree extends XPanel {
 
     private DefaultMutableTreeNode addNodes(DefaultMutableTreeNode curTop, File rootDirectory) {
 
-        String curPath = rootDirectory.getPath();
+        String rootPath = rootDirectory.getPath();
 
-        DefaultMutableTreeNode curDirectory = new DefaultMutableTreeNode(rootDirectoryName);
+        DefaultMutableTreeNode rootDirectoryNode = new DefaultMutableTreeNode(rootDirectoryName);
 
         Vector dirList = new Vector();
 
@@ -59,29 +59,30 @@ public class XFileTree extends XPanel {
         File f;
         Vector files = new Vector();
 
-        // Make two passes, one for Dirs and one for Files.
 
         // Pass for directories
         for (int i = 0; i < dirList.size(); i++) {
             String thisObject = (String) dirList.elementAt(i);
             String newPath;
-            if (curPath.equals("."))
+            if (rootPath.equals("."))
                 newPath = thisObject;
             else
-                newPath = curPath + File.separator + thisObject;
+                newPath = rootPath + File.separator + thisObject;
             if ((f = new File(newPath)).isDirectory())
-                addNodes(curDirectory, f);
+                addNodes(rootDirectoryNode, f);
             else
                 files.addElement(thisObject);
         }
 
         // Pass for files
         for (int fnum = 0; fnum < files.size(); fnum++)
-            curDirectory.add(new DefaultMutableTreeNode(files.elementAt(fnum)));
+            rootDirectoryNode.add(new DefaultMutableTreeNode(files.elementAt(fnum)));
 
-        return curDirectory;
+        return rootDirectoryNode;
     }
 
 
-
+    public JTree getFileTree() {
+        return fileTree;
+    }
 }
