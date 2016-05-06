@@ -1,13 +1,12 @@
 package com.company.fitness;
 
-import SwingX.XDivider;
-import SwingX.XPanel;
-import SwingX.XScrollPanel;
+import SwingX.components.XDivider;
+import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
 import com.company.PanelModel;
 import com.company.data.CategoryType;
 import com.company.graph.GraphFactory;
 import com.company.graph.GraphItem;
-import org.jdesktop.swingx.JXPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,6 +26,8 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
     private GraphItem distanceGraph;
     private GraphItem timeGraph;
     private GraphItem speedGraph;
+
+    private XPanel statisticsPanel;
 
     private ArrayList<GraphItem> graphItems = new ArrayList<>();
 
@@ -56,27 +57,11 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
         graphItems.add(speedGraph);
 
 
-        XPanel statisticsPanel = new XPanel();
+        statisticsPanel = new XPanel();
         statisticsPanel.setLayout(new BoxLayout(statisticsPanel, BoxLayout.Y_AXIS));
         statisticsPanel.setMaximumSize(new Dimension(830, 10000));
 
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Total Sessions", distanceGraph.getCount(), null));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Total Distance", distanceGraph.getTotal(), "Km"));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Average Distance Per Day", distanceGraph.getAverage(), "Km"));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Average Distance Per Week", distanceGraph.getWeeklyAverage(), "Km"));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Total Time", timeGraph.getTotal(), "Hours"));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Average Time Per Day", timeGraph.getAverage(), "Hours"));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Average Time Per Week", timeGraph.getWeeklyAverage(), "Hours"));
-        statisticsPanel.add(new XDivider(0, 5));
-        statisticsPanel.add(new StatisticPanel("Average Speed", speedGraph.getAverage(), "Km/h"));
-        statisticsPanel.add(new XDivider(0, 5));
+        populateStatisticsPanel();
 
         viewPortPanel.add(statisticsPanel);
         viewPortPanel.add(distanceGraph);
@@ -96,5 +81,34 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
         graphFactory.updateGraphItem(distanceGraph, "distance", CategoryType.INT);
         graphFactory.updateGraphItem(timeGraph, "time", CategoryType.TIME);
         graphFactory.updateGraphItem(speedGraph, "speed", CategoryType.INT);
+
+        statisticsPanel.removeAll();
+        populateStatisticsPanel();
+
+
+
+    }
+
+    private void populateStatisticsPanel(){
+
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Total Sessions", distanceGraph.getCount(), null));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Total Distance", distanceGraph.getTotal(), "Km"));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Average Distance Per Day", distanceGraph.getAverage(), "Km"));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Average Distance Per Week", distanceGraph.getWeeklyAverage(), "Km"));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Total Time", timeGraph.getTotal(), "Hours"));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Average Time Per Day", timeGraph.getAverage(), "Hours"));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Average Time Per Week", timeGraph.getWeeklyAverage(), "Hours"));
+        statisticsPanel.add(new XDivider(0, 5));
+        statisticsPanel.add(new StatisticPanel("Average Speed", speedGraph.getAverage(), "Km/h"));
+        statisticsPanel.add(new XDivider(0, 5));
+
+        statisticsPanel.refresh();
     }
 }

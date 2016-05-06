@@ -121,11 +121,24 @@ public class GraphItem extends JXPanel implements PanelModel{
     }
 
     public double getAverage(){
-        return Double.parseDouble(decimalFormat.format(total/count));
+
+        double average = 0;
+        if(count > 0){
+            average = Double.parseDouble(decimalFormat.format(total/count));
+        }
+
+        return average;
     }
 
     public double getWeeklyAverage(){
-        return Double.parseDouble(decimalFormat.format(total/((double)dataset.getColumnCount()/7)));
+
+        double weeklyAverage = 0;
+
+        if(count > 0){
+            weeklyAverage = Double.parseDouble(decimalFormat.format(total/((double)dataset.getColumnCount()/7)));
+        }
+
+        return weeklyAverage;
     }
 
     public void setCount(double count) {

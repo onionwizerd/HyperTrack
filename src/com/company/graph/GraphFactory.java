@@ -97,7 +97,7 @@ public class GraphFactory {
             switch (categoryType){
                 case INT:
                     while (resultSet.next()){
-                        addValue(resultSet.getInt(category), "Series1", resultSet.getDate("date"));
+                        addValue(resultSet.getInt(category), "Series1", (resultSet.getDate("date")));
                     }
                     break;
                 case DOUBLE:
@@ -120,6 +120,7 @@ public class GraphFactory {
         }
 
         graphItem.update(dataset);
+
 
     }
 

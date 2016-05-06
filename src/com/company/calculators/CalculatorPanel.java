@@ -14,16 +14,14 @@
 
 package com.company.calculators;
 
-import SwingX.XPanel;
-import SwingX.XScrollPanel;
-import SwingX.XTabbedPane;
+import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
 import com.company.PanelModel;
 
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.awt.*;
-import java.io.File;
 
 public class CalculatorPanel extends XScrollPanel implements PanelModel{
 

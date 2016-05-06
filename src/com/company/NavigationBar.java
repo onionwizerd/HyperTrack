@@ -2,11 +2,9 @@
 package com.company;
 
 import SwingX.XMain;
-import SwingX.XButton;
-import SwingX.XToolBar;
+import SwingX.components.XButton;
+import SwingX.components.XToolBar;
 import com.company.calculators.CalculatorPanel;
-import com.company.database.DatabaseManager;
-import com.company.database.InteractionManager;
 import com.company.fitness.FitnessPanel;
 import com.company.nutrition.NutritionPanel;
 import com.company.news.NewsFeedPanel;
@@ -15,8 +13,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 

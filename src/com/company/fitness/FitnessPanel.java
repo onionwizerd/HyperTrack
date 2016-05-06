@@ -1,6 +1,6 @@
 package com.company.fitness;
 
-import SwingX.XTabbedPane;
+import SwingX.components.XTabbedPane;
 import com.company.PanelModel;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;

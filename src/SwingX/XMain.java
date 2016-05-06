@@ -1,5 +1,10 @@
 package SwingX;
 
+import SwingX.components.XButton;
+import SwingX.components.XCalendar;
+import SwingX.components.XFrame;
+import SwingX.components.XToolBar;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;

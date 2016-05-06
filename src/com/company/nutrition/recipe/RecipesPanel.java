@@ -1,7 +1,7 @@
 package com.company.nutrition.recipe;
 
-import SwingX.XFileTree;
-import SwingX.XPanel;
+import SwingX.components.tree.XFileTree;
+import SwingX.components.XPanel;
 import com.company.PanelModel;
 
 import javax.swing.event.TreeSelectionEvent;
@@ -9,8 +9,6 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.awt.*;
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 /**
  * Created by Josh on 2016-04-14.

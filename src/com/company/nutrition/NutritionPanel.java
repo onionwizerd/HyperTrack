@@ -13,7 +13,7 @@
  */
 package com.company.nutrition;
 
-import SwingX.XTabbedPane;
+import SwingX.components.XTabbedPane;
 import com.company.PanelModel;
 import com.company.nutrition.recipe.RecipesPanel;
 

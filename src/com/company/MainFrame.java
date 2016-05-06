@@ -1,21 +1,15 @@
 
 package com.company;
 
-import SwingX.XMain;
-import SwingX.XButton;
-import SwingX.XCalendar;
-import SwingX.XFrame;
-import SwingX.XPanel;
-import SwingX.XScrollPanel;
-import SwingX.XToolBar;
-import com.company.calculators.CalculatorPanel;
+import SwingX.components.XButton;
+import SwingX.components.XFrame;
+import SwingX.components.XPanel;
 import com.company.news.NewsFeedPanel;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;

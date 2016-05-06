@@ -1,9 +1,9 @@
 
 package com.company.news;
 
-import SwingX.XDivider;
-import SwingX.XPanel;
-import SwingX.XScrollPanel;
+import SwingX.components.XDivider;
+import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
 import com.company.PanelModel;
 
 import java.awt.*;

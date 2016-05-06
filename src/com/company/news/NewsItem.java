@@ -1,8 +1,7 @@
 package com.company.news;
 
-import SwingX.XButton;
-import SwingX.XImagePanel;
-import SwingX.XPanel;
+import SwingX.components.XButton;
+import SwingX.components.XImagePanel;
 import org.jdesktop.swingx.JXPanel;
 import org.jdesktop.swingx.border.DropShadowBorder;
 

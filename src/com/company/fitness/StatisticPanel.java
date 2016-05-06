@@ -1,6 +1,6 @@
 package com.company.fitness;
 
-import SwingX.XPanel;
+import SwingX.components.XPanel;
 import com.company.PanelModel;
 
 import javax.swing.*;

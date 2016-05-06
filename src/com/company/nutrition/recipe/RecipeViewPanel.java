@@ -1,7 +1,7 @@
 package com.company.nutrition.recipe;
 
-import SwingX.XPanel;
-import SwingX.XScrollPanel;
+import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
 import com.company.PanelModel;
 
 import javax.swing.*;

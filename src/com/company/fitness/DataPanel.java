@@ -1,8 +1,13 @@
 package com.company.fitness;
 
-import SwingX.*;
+import SwingX.components.XButton;
+import SwingX.components.XDivider;
+import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
+import SwingX.components.table.XTable;
 import com.company.PanelModel;
-import com.company.data.DataEntryFrame;
+import com.company.data.dataentry.DataEntryFrame;
+import com.company.data.Format;
 import com.company.data.RecordContextMenu;
 import com.company.database.DatabaseManager;
 
@@ -13,8 +18,6 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.sql.*;
-import java.util.*;
-import java.util.Date;
 
 /**
  * Created by Josh on 4/30/2016.
@@ -27,6 +30,8 @@ public class DataPanel extends XPanel implements PanelModel{
     private String tableName = "";
     private int latestID = 0;
     private Connection connection;
+
+    private Format formatter = new Format();
 
     public DataPanel(String tableName) {
         this.tableName = tableName;
@@ -52,9 +57,9 @@ public class DataPanel extends XPanel implements PanelModel{
 
                         int row = dataTable.rowAtPoint(mouseEvent.getPoint());
 
-                        int[] date = formatDate(dataModel.getValueAt(row, 0).toString());
-                        int[] distance = formatDistance(dataModel.getValueAt(row, 1).toString());
-                        int[] time = formatTime(dataModel.getValueAt(row, 2).toString());
+                        int[] date = formatter.formatDate(dataModel.getValueAt(row, 0).toString());
+                        int[] distance = formatter.formatDistance(dataModel.getValueAt(row, 1).toString());
+                        int[] time = formatter.formatTime(dataModel.getValueAt(row, 2).toString());
                         int id = Integer.parseInt(dataModel.getValueAt(row, 4).toString());
                         System.out.println("ID = " + id);
 
@@ -72,7 +77,7 @@ public class DataPanel extends XPanel implements PanelModel{
                             if(rowData[i] == null) dataIntegrity = false;
                         }
 
-                        if(dataIntegrity == true){
+                        if(dataIntegrity){
                             updateRecord(rowData);
                         }
 
@@ -144,7 +149,7 @@ public class DataPanel extends XPanel implements PanelModel{
                     if(rowData[i] == null) dataIntegrity = false;
                 }
 
-                if(dataIntegrity == true){
+                if(dataIntegrity){
                     latestID = Integer.parseInt(rowData[0].toString());
                     insertRecord(rowData);
                 }
@@ -191,6 +196,7 @@ public class DataPanel extends XPanel implements PanelModel{
                         for(int i = 0; i < rows.length; i++){
                             deleteRecord(Integer.parseInt(dataModel.getValueAt(dataTable.getSelectedRow(), 4)
                                     .toString()));
+                            System.out.println("removed row");
                             dataModel.removeRow(dataTable.getSelectedRow());
 
                         }
@@ -275,8 +281,6 @@ public class DataPanel extends XPanel implements PanelModel{
 
         }catch (SQLException sqlExcep){
             sqlExcep.printStackTrace();
-        }catch (Exception excep){
-            excep.printStackTrace();
         }
     }
 
@@ -349,39 +353,11 @@ public class DataPanel extends XPanel implements PanelModel{
             excep.printStackTrace();
             displayErrorMessage("Unable to delete record \n Exception");
         }
-    }
 
-    private int[] formatDate(String date){
-        int[] formattedDate = new int[3];
+        populateDataModel();
+        FitnessPanel fitnessPanel = (FitnessPanel) this.getParent();
+        fitnessPanel.update();
 
-        formattedDate[0] = Integer.parseInt(date.substring(0, date.indexOf("-")));
-        formattedDate[1] = Integer.parseInt(date.substring(date.indexOf("-")+1, date.lastIndexOf("-")));
-        formattedDate[2] = Integer.parseInt(date.substring(date.lastIndexOf("-")+1, date.length()));
-
-        return formattedDate;
-    }
-
-    private int[] formatTime(String time){
-        int[] formattedTime = new int[3];
-
-        formattedTime[0] = Integer.parseInt(time.substring(0, time.indexOf(":")));
-        formattedTime[1] = Integer.parseInt(time.substring(time.indexOf(":")+1, time.lastIndexOf(":")));
-        formattedTime[2] = Integer.parseInt(time.substring(time.lastIndexOf(":")+1, time.length()));
-
-        return formattedTime;
-    }
-
-    private int[] formatDistance(String distance){
-        int[] formattedDistance = new int[2];
-
-
-        formattedDistance[0] = Integer.parseInt(distance.substring(0, distance.indexOf(".")));
-        formattedDistance[1] = Integer.parseInt(distance.substring(distance.indexOf(".")+1));
-
-        System.out.println("Kilometers = " + formattedDistance[0]);
-        System.out.println("Meters = " + formattedDistance[1]);
-
-        return formattedDistance;
     }
 
     private void displayErrorMessage(String errorMessage){

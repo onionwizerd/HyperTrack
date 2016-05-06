@@ -1,0 +1,13 @@
+<data>
+    <Cycling>
+
+        <types>
+        </types>
+        <terrains>
+            <terrain name="Road"/>
+            <terrain name="Off Road"/>
+        </terrains>
+    </Cycling>
+
+
+</data>
