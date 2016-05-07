@@ -7,32 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponentModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/ComponentLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/TerrainComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/DataEntryFrame.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$1.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$2.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$3.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$4.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/usr/database/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponent.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" afterPath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" />
     </list>
     <ignored path="HyperTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,13 +52,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataEntryFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataEntryFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="971">
-              <caret line="332" column="35" selection-start-line="332" selection-start-column="35" selection-end-line="332" selection-end-column="35" />
+            <state relative-caret-position="427">
+              <caret line="383" column="26" selection-start-line="383" selection-start-column="26" selection-end-line="383" selection-end-column="26" />
               <folding>
                 <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
+                <element signature="method#addLabel#0;class#DataEntryFrame#0" expanded="false" />
+                <element signature="method#addComponent#0;class#DataEntryFrame#0" expanded="false" />
                 <element signature="method#formatDate#0;class#DataEntryFrame#0" expanded="false" />
                 <element signature="method#formatTime#0;class#DataEntryFrame#0" expanded="false" />
                 <element signature="method#formatDistance#0;class#DataEntryFrame#0" expanded="false" />
@@ -92,7 +74,7 @@
       <file leaf-file-name="DataEntryFrameFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="1073">
               <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataConfig.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dataConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -227,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponentModel.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/TerrainComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
@@ -235,6 +216,7 @@
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java" />
+        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
       </list>
     </option>
   </component>
@@ -841,7 +823,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1200,41 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
-          <caret line="332" column="35" selection-start-line="332" selection-start-column="35" selection-end-line="332" selection-end-column="35" />
-          <folding>
-            <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
-            <element signature="method#formatDate#0;class#DataEntryFrame#0" expanded="false" />
-            <element signature="method#formatTime#0;class#DataEntryFrame#0" expanded="false" />
-            <element signature="method#formatDistance#0;class#DataEntryFrame#0" expanded="false" />
-            <element signature="method#setDistance#0;class#DataEntryFrame#0" expanded="false" />
-            <element signature="method#setDate#0;class#DataEntryFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1272,6 +1219,43 @@
         <state relative-caret-position="153">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1073">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="383" column="26" selection-start-line="383" selection-start-column="26" selection-end-line="383" selection-end-column="26" />
+          <folding>
+            <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#addLabel#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#addComponent#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#formatDate#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#formatTime#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#formatDistance#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#setDistance#0;class#DataEntryFrame#0" expanded="false" />
+            <element signature="method#setDate#0;class#DataEntryFrame#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

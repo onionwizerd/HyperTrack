@@ -3,6 +3,7 @@ package com.company.data.dataentry;
 import SwingX.components.XButton;
 import SwingX.components.XDivider;
 import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
 import com.company.Main;
 import com.company.data.DateLabelFormatter;
 import org.jdatepicker.impl.JDatePanelImpl;
@@ -59,6 +60,7 @@ public class DataEntryFrame extends JDialog{
 
         componentList = new ArrayList<>();
     }
+
 
     public Object[] showAll(int id, boolean edit){
         rowData = new Object[5];
@@ -328,7 +330,7 @@ public class DataEntryFrame extends JDialog{
         }
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setSize(new Dimension(375, 500));
+        setSize(new Dimension(395, 350));
         setLocationRelativeTo(null);
         setBackground(Color.WHITE);
         setIconImage(bufferedImageIcon);
@@ -379,11 +381,14 @@ public class DataEntryFrame extends JDialog{
         containerPanel.add(labelPanel);
         containerPanel.add(dataEntryPanel);
 
+        XScrollPanel containerScrollPanel = new XScrollPanel();
+        containerScrollPanel.setViewportView(containerPanel);
+
         XPanel contentPanel = new XPanel();
         contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
 
         contentPanel.add(new XDivider(0,15));
-        contentPanel.add(containerPanel);
+        contentPanel.add(containerScrollPanel);
         contentPanel.add(new XDivider(0,5));
         contentPanel.add(finaliseButtonsPanel);
         contentPanel.add(new XDivider(0,15));
