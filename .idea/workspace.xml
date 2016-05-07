@@ -7,7 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/log.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/usr/database/log/log1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
     </list>
     <ignored path="HyperTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +37,9 @@
       <file leaf-file-name="DataPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/fitness/DataPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="154" column="21" selection-start-line="154" selection-start-column="21" selection-end-line="154" selection-end-column="21" />
+            <state relative-caret-position="-1088">
+              <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
               <folding>
-                <element signature="class#1407:3707" expanded="false" />
                 <element signature="class#3735:3897" expanded="false" />
                 <element signature="class#6741:8092" expanded="false" />
                 <element signature="method#populateDataModel#0;class#DataPanel#0" expanded="false" />
@@ -47,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataEntryFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataEntryFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+            <state relative-caret-position="-543">
+              <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
               <folding>
                 <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
                 <element signature="method#addLabel#0;class#DataEntryFrame#0" expanded="false" />
@@ -66,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataEntryFrameFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataEntryFrameFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+            <state relative-caret-position="376">
+              <caret line="87" column="62" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,9 +97,13 @@
       <file leaf-file-name="TimeComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="342">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+              <folding>
+                <element signature="method#hasDataIntegrity#0;class#TimeComponent#0" expanded="false" />
+                <element signature="method#formatTime#0;class#TimeComponent#0" expanded="false" />
+                <element signature="method#getTimeAsArray#0;class#TimeComponent#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +111,8 @@
       <file leaf-file-name="dataConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -206,12 +214,12 @@
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/TerrainComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java" />
         <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
       </list>
     </option>
   </component>
@@ -747,7 +755,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1161,22 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/DataPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="154" column="21" selection-start-line="154" selection-start-column="21" selection-end-line="154" selection-end-column="21" />
-          <folding>
-            <element signature="class#1407:3707" expanded="false" />
-            <element signature="class#3735:3897" expanded="false" />
-            <element signature="class#6741:8092" expanded="false" />
-            <element signature="method#populateDataModel#0;class#DataPanel#0" expanded="false" />
-            <element signature="method#insertRecord#0;class#DataPanel#0" expanded="false" />
-            <element signature="method#updateRecord#0;class#DataPanel#0" expanded="false" />
-            <element signature="method#deleteRecord#0;class#DataPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1201,22 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1227,20 +1203,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/DataPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+        <state relative-caret-position="-1088">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#3735:3897" expanded="false" />
+            <element signature="class#6741:8092" expanded="false" />
+            <element signature="method#populateDataModel#0;class#DataPanel#0" expanded="false" />
+            <element signature="method#insertRecord#0;class#DataPanel#0" expanded="false" />
+            <element signature="method#updateRecord#0;class#DataPanel#0" expanded="false" />
+            <element signature="method#deleteRecord#0;class#DataPanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        <state relative-caret-position="-543">
+          <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
           <folding>
             <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
             <element signature="method#addLabel#0;class#DataEntryFrame#0" expanded="false" />
@@ -1250,6 +1231,36 @@
             <element signature="method#formatDistance#0;class#DataEntryFrame#0" expanded="false" />
             <element signature="method#setDistance#0;class#DataEntryFrame#0" expanded="false" />
             <element signature="method#setDate#0;class#DataEntryFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding>
+            <element signature="method#hasDataIntegrity#0;class#TimeComponent#0" expanded="false" />
+            <element signature="method#formatTime#0;class#TimeComponent#0" expanded="false" />
+            <element signature="method#getTimeAsArray#0;class#TimeComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="87" column="62" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

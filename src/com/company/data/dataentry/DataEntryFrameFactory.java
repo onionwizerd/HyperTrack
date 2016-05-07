@@ -85,8 +85,6 @@ public class DataEntryFrameFactory {
                 Node terrainNode = terrainsNodeList.item(i);
                 Element terrainElement = (Element)terrainNode;
 
-                System.out.println(terrainElement.getAttribute("name"));
-
                 terrainsList.add(terrainElement.getAttribute("name"));
 
             }
