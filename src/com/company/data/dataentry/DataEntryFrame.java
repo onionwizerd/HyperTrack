@@ -62,6 +62,7 @@ public class DataEntryFrame extends JDialog{
     }
 
 
+    @Deprecated
     public Object[] showAll(int id, boolean edit){
         rowData = new Object[5];
 

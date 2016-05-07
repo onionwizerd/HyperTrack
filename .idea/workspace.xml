@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/usr/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
     </list>
     <ignored path="HyperTrack.iws" />
@@ -55,8 +50,8 @@
       <file leaf-file-name="DataEntryFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="383" column="26" selection-start-line="383" selection-start-column="26" selection-end-line="383" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
               <folding>
                 <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
                 <element signature="method#addLabel#0;class#DataEntryFrame#0" expanded="false" />
@@ -1244,8 +1239,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="383" column="26" selection-start-line="383" selection-start-column="26" selection-end-line="383" selection-end-column="26" />
+        <state relative-caret-position="240">
+          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
           <folding>
             <element signature="method#showAll#0;class#DataEntryFrame#0" expanded="false" />
             <element signature="method#addLabel#0;class#DataEntryFrame#0" expanded="false" />
