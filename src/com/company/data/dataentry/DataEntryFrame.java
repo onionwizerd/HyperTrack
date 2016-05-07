@@ -13,7 +13,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Properties;
 
 /**
@@ -37,8 +39,25 @@ public class DataEntryFrame extends JDialog{
     private int meters;
     private int[] time;
 
+    private XPanel labelPanel;
+    private XPanel dataEntryPanel = new XPanel();
+
+    private ArrayList<DataEntryComponent> componentList;
+
     public DataEntryFrame(){
         super(Main.getMainFrame(), "Enter", true);
+        labelPanel = new XPanel();
+        labelPanel.setLayout(new BoxLayout(labelPanel, BoxLayout.Y_AXIS));
+        labelPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        labelPanel.setMaximumSize(new Dimension(150, 500));
+        labelPanel.setMinimumSize(new Dimension(150, 0));
+
+        dataEntryPanel.setLayout(new BoxLayout(dataEntryPanel, BoxLayout.Y_AXIS));
+        dataEntryPanel.setAlignmentX(Component.RIGHT_ALIGNMENT);
+        dataEntryPanel.setMaximumSize(new Dimension(350, 500));
+        dataEntryPanel.setMinimumSize(new Dimension(350, 0));
+
+        componentList = new ArrayList<>();
     }
 
     public Object[] showAll(int id, boolean edit){
@@ -177,10 +196,6 @@ public class DataEntryFrame extends JDialog{
         speedPanel.add(speedField);
 
 
-        // Terrain Entry
-        String[] terrainList = new String[]{"Spring", "Summer",  "Fall",  "Winter"};
-        JComboBox<String> seasons = new JComboBox<>(terrainList);
-
         XButton acceptBtn = new XButton("Accept");
         acceptBtn.addActionListener(e -> {
 
@@ -282,6 +297,108 @@ public class DataEntryFrame extends JDialog{
             secondsSpinnerModel.setValue(time[2]);
             calculateSpeed();
         }
+
+        setContentPane(contentPanel);
+        setResizable(false);
+        setVisible(true);
+        toFront();
+
+        return rowData;
+    }
+
+    public void addLabel(JLabel dataLabel){
+        labelPanel.add(dataLabel);
+        labelPanel.add(new XDivider(0, 5));
+    }
+
+    public void addComponent(DataEntryComponent dataEntryComponent){
+        dataEntryPanel.add(dataEntryComponent);
+        dataEntryPanel.add(new XDivider(0, 5));
+        componentList.add(dataEntryComponent);
+    }
+
+    public Object[] init(int id, boolean edit){
+
+        BufferedImage bufferedImageIcon = null;
+        try {
+            bufferedImageIcon = ImageIO.read(Main.class.getResource
+                    ("img/icon.png"));
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setSize(new Dimension(375, 500));
+        setLocationRelativeTo(null);
+        setBackground(Color.WHITE);
+        setIconImage(bufferedImageIcon);
+        setTitle("Enter New Record");
+
+        XButton acceptBtn = new XButton("Accept");
+        acceptBtn.addActionListener(e -> {
+
+            rowData = new Object[componentList.size()];
+
+            // Data Integrity Check
+            boolean dataIntegrity = true;
+            for(int i = 0; i <= componentList.size(); i++){
+                dataIntegrity = componentList.get(i).hasDataIntegrity();
+            }
+
+            if(dataIntegrity){
+                // Returns same ID if record is being edited
+                if(edit){
+                    rowData[0] = (id);
+                }else {
+                    rowData[0] = (id + 1);
+                }
+
+                for (int x = 0; x <= componentList.size(); x++){
+                    rowData[x+1] = componentList.get(x).getValue();
+                }
+
+                dispose();
+                return;
+            }
+        });
+
+        XButton discardBtn = new XButton("Discard");
+        discardBtn.addActionListener(e -> dispose());
+
+        XPanel finaliseButtonsPanel = new XPanel();
+        finaliseButtonsPanel.setLayout(new BoxLayout(finaliseButtonsPanel, BoxLayout.X_AXIS));
+
+        finaliseButtonsPanel.add(acceptBtn);
+        finaliseButtonsPanel.add(new XDivider(5, 0));
+        finaliseButtonsPanel.add(discardBtn);
+
+        XPanel containerPanel = new XPanel();
+        containerPanel.setLayout(new BoxLayout(containerPanel, BoxLayout.X_AXIS));
+
+        containerPanel.add(new XDivider(15,0));
+        containerPanel.add(labelPanel);
+        containerPanel.add(dataEntryPanel);
+
+        XPanel contentPanel = new XPanel();
+        contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
+
+        contentPanel.add(new XDivider(0,15));
+        contentPanel.add(containerPanel);
+        contentPanel.add(new XDivider(0,5));
+        contentPanel.add(finaliseButtonsPanel);
+        contentPanel.add(new XDivider(0,15));
+
+        /*
+        if(edit){
+            setTitle("Edit Record");
+            dateModel.setDate(date[0], date[1], date[2]);
+            kilometersSpinnerModel.setValue(kilometers);
+            metersSpinnerModel.setValue(meters);
+            hoursSpinnerModel.setValue(time[0]);
+            minutesSpinnerModel.setValue(time[1]);
+            secondsSpinnerModel.setValue(time[2]);
+            calculateSpeed();
+        }*/
 
         setContentPane(contentPanel);
         setResizable(false);

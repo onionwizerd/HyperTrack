@@ -9,6 +9,7 @@ import com.company.PanelModel;
 import com.company.data.dataentry.DataEntryFrame;
 import com.company.data.Format;
 import com.company.data.RecordContextMenu;
+import com.company.data.dataentry.DataEntryFrameFactory;
 import com.company.database.DatabaseManager;
 
 import javax.swing.*;
@@ -139,14 +140,19 @@ public class DataPanel extends XPanel implements PanelModel{
         addRecordBtn.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                DataEntryFrame dataEntryFrame = new DataEntryFrame();
+                DataEntryFrameFactory dataEntryFrameFactory = new DataEntryFrameFactory(tableName);
+                DataEntryFrame dataEntryFrame = dataEntryFrameFactory.createDataEntryFrame(); //new DataEntryFrame();
                 System.out.println("Latest ID = " + latestID);
-                Object[] rowData = dataEntryFrame.showAll(latestID, false);
+                Object[] rowData = dataEntryFrame.init(latestID, false); //dataEntryFrame.showAll(latestID, false);
 
                 // Data Integrity Check
                 boolean dataIntegrity = true;
-                for (int i = 0; i <= (rowData.length-1); i++){
-                    if(rowData[i] == null) dataIntegrity = false;
+                if(rowData == null){
+                    dataIntegrity = false;
+                }else {
+                    for (int i = 0; i <= (rowData.length-1); i++){
+                        if(rowData[i] == null) dataIntegrity = false;
+                    }
                 }
 
                 if(dataIntegrity){
