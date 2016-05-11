@@ -1,13 +1,11 @@
 package SwingX.components;
 
 import SwingX.XMain;
-import SwingX.components.XButton;
-import SwingX.components.XPanel;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.text.AbstractDocument;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
@@ -17,6 +15,8 @@ import java.io.IOException;
 public class XFrameBar extends XPanel {
 
     private JFrame rootFrame;
+
+    private Point initialClick;
 
     public XFrameBar(JFrame rootFrame) {
         this.rootFrame =  rootFrame;
@@ -30,6 +30,31 @@ public class XFrameBar extends XPanel {
         setSize(new Dimension(rootFrame.getWidth(), 25));
         setMinimumSize(new Dimension(rootFrame.getWidth(), 25));
         setMaximumSize(new Dimension(rootFrame.getWidth(), 25));
+
+
+        addMouseListener(new MouseAdapter(){
+            public void mousePressed(MouseEvent me) {
+                initialClick = me.getPoint();
+                getComponentAt(initialClick);
+            }
+        });
+
+        addMouseMotionListener(new MouseAdapter(){
+            public void mouseDragged(MouseEvent me){
+                // get location of Window
+                int thisX = rootFrame.getLocation().x;
+                int thisY = rootFrame.getLocation().y;
+
+                // Determine how much the mouse moved since the initial click
+                int xMoved = (thisX + me.getX()) - (thisX + initialClick.x);
+                int yMoved = (thisY + me.getY()) - (thisY + initialClick.y);
+
+                // Move window to this position
+                int X = thisX + xMoved;
+                int Y = thisY + yMoved;
+                rootFrame.setLocation(X, Y);
+            }
+        });
 
         BufferedImage exitIcon = null;
         try {

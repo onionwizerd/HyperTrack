@@ -7,39 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/16x16/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/16x16/exit1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/16x16/exit2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/16x16/minimize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/16x16/minimize2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/24x24/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/img/24x24/minimize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/components/XFrameBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/XMain.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/XMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrame.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrameFactory.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrameFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/DateComponent.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/DateComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/DistanceComponent.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/DistanceComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/SpeedComponent.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/SpeedComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/TimeComponent.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/TimeComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$1.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$3.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$4.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/usr/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c4b0.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c4b0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwingX/XMain.java" afterPath="$PROJECT_DIR$/src/SwingX/XMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" afterPath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwingX/components/XFrameBar.java" afterPath="$PROJECT_DIR$/src/SwingX/components/XFrameBar.java" />
     </list>
     <ignored path="HyperTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,8 +49,8 @@
       <file leaf-file-name="XMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SwingX/XMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="32" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="408">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -91,8 +59,8 @@
       <file leaf-file-name="XFrameBar.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SwingX/components/XFrameBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="53" column="83" selection-start-line="53" selection-start-column="83" selection-end-line="53" selection-end-column="83" />
+            <state relative-caret-position="-355">
+              <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -744,7 +712,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1202,16 +1170,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwingX/XMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="32" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="408">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwingX/components/XFrameBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="53" column="83" selection-start-line="53" selection-start-column="83" selection-end-line="53" selection-end-column="83" />
+        <state relative-caret-position="-355">
+          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
