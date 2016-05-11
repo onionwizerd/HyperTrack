@@ -25,7 +25,7 @@ public class SpeedComponent extends DataEntryComponent implements DataEntryCompo
 
     @Override
     public Object getValue() {
-        return null;
+        return speedField.getText();
     }
 
     @Override

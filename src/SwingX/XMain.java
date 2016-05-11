@@ -1,9 +1,7 @@
 package SwingX;
 
-import SwingX.components.XButton;
-import SwingX.components.XCalendar;
-import SwingX.components.XFrame;
-import SwingX.components.XToolBar;
+import SwingX.components.*;
+import SwingX.components.XFrameBar;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -25,7 +23,7 @@ public class XMain {
         XFrame frame = new XFrame();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(new Dimension(500, 500));
-        frame.setLayout(new FlowLayout());
+        frame.setLayout(new BorderLayout());
         frame.setLocationRelativeTo(null);
         frame.setBackground(Color.WHITE);
         try {
@@ -34,6 +32,7 @@ public class XMain {
             e.printStackTrace();
         }
         frame.setIconImage(bi);
+        frame.setUndecorated(true);
         frame.setTitle("SwingX");
 
 
@@ -59,8 +58,14 @@ public class XMain {
 
         toolBar.add(button);
 
+
+
+        XFrameBar frameBar  = new XFrameBar(frame);
+
+
+        mainPanel.add(frameBar, BorderLayout.NORTH);
         mainPanel.add(calendar, BorderLayout.CENTER);
-        mainPanel.add(toolBar, BorderLayout.WEST);
+       // mainPanel.add(toolBar, BorderLayout.WEST);
 
         frame.setContentPane(mainPanel);
 

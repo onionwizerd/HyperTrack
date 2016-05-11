@@ -78,4 +78,9 @@ public class DistanceComponent extends DataEntryComponent implements DataEntryCo
         return distance;
     }
 
+    public void setDistance(double kilometers, double meters){
+        kilometersSpinner.setValue(kilometers);
+        metersSpinner.setValue(meters);
+    }
+
 }

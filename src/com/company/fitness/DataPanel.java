@@ -64,13 +64,13 @@ public class DataPanel extends XPanel implements PanelModel{
                         int id = Integer.parseInt(dataModel.getValueAt(row, 4).toString());
                         System.out.println("ID = " + id);
 
-                        DataEntryFrame dataEntryFrame = new DataEntryFrame();
+                        DataEntryFrame dataEntryFrame = new DataEntryFrameFactory(tableName).createDataEntryFrame();
                         dataEntryFrame.setDate(date);
                         dataEntryFrame.setDistance(distance[0], distance[1]);
                         dataEntryFrame.setTime(time);
 
 
-                        Object[] rowData = dataEntryFrame.showAll(id, true);
+                        Object[] rowData = dataEntryFrame.init(id, true);
                         System.out.println("ID = " + rowData[0]);
                         // Data Integrity Check
                         boolean dataIntegrity = true;
@@ -154,6 +154,8 @@ public class DataPanel extends XPanel implements PanelModel{
                         if(rowData[i] == null) dataIntegrity = false;
                     }
                 }
+
+                System.out.println("Data Integrity = " + dataIntegrity);
 
                 if(dataIntegrity){
                     latestID = Integer.parseInt(rowData[0].toString());
@@ -292,6 +294,15 @@ public class DataPanel extends XPanel implements PanelModel{
 
     private void insertRecord(Object[] rowData){
         try {
+
+            System.out.println("INSERT INTO " + tableName
+                    +" VALUES ("
+                    + rowData[0] + ", " // id
+                    + "'" + rowData[1] + "'" + ", " // date
+                    + rowData[2] + ", " // distance
+                    + "'" + rowData[3] + "'" + ", " // time
+                    + rowData[4] // speed
+                    +")");
 
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO " + tableName
                     +" VALUES ("

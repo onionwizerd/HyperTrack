@@ -340,11 +340,11 @@ public class DataEntryFrame extends JDialog{
         XButton acceptBtn = new XButton("Accept");
         acceptBtn.addActionListener(e -> {
 
-            rowData = new Object[componentList.size()];
+            rowData = new Object[componentList.size()+1];
 
             // Data Integrity Check
             boolean dataIntegrity = true;
-            for(int i = 0; i <= componentList.size(); i++){
+            for(int i = 0; i <= componentList.size()-1; i++){
                 dataIntegrity = componentList.get(i).hasDataIntegrity();
             }
 
@@ -356,8 +356,9 @@ public class DataEntryFrame extends JDialog{
                     rowData[0] = (id + 1);
                 }
 
-                for (int x = 0; x <= componentList.size(); x++){
+                for (int x = 0; x <= componentList.size()-1; x++){
                     rowData[x+1] = componentList.get(x).getValue();
+                    System.out.println(rowData[x+1]);
                 }
 
                 dispose();
@@ -394,17 +395,14 @@ public class DataEntryFrame extends JDialog{
         contentPanel.add(finaliseButtonsPanel);
         contentPanel.add(new XDivider(0,15));
 
-        /*
+
         if(edit){
             setTitle("Edit Record");
-            dateModel.setDate(date[0], date[1], date[2]);
-            kilometersSpinnerModel.setValue(kilometers);
-            metersSpinnerModel.setValue(meters);
-            hoursSpinnerModel.setValue(time[0]);
-            minutesSpinnerModel.setValue(time[1]);
-            secondsSpinnerModel.setValue(time[2]);
-            calculateSpeed();
-        }*/
+            ComponentManager.dateComponent.setDate(date);
+            ComponentManager.distanceComponent.setDistance(kilometers, meters);
+            ComponentManager.timeComponent.setTime(time);
+            ComponentManager.calculateSpeed();
+        }
 
         setContentPane(contentPanel);
         setResizable(false);

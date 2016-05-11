@@ -113,4 +113,10 @@ public class TimeComponent extends DataEntryComponent implements DataEntryCompon
 
         return time;
     }
+
+    public void setTime(int[] time){
+        hoursSpinner.setValue(time[0]);
+        minutesSpinner.setValue(time[1]);
+        secondsSpinner.setValue(time[2]);
+    }
 }

@@ -72,4 +72,10 @@ public class DateComponent extends DataEntryComponent implements DataEntryCompon
 
         return date;
     }
+
+    public void setDate(int[] date){
+        dateModel.setYear(date[0]);
+        dateModel.setMonth(date[1]);
+        dateModel.setDay(date[2]);
+    }
 }
