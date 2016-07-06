@@ -33,20 +33,20 @@ public class RecipesPanel extends XPanel implements PanelModel{
             public void valueChanged(TreeSelectionEvent e) {
                 DefaultMutableTreeNode node = (DefaultMutableTreeNode) e
                         .getPath().getLastPathComponent();
-                File recipeFile = new File("usr\\recipes\\" + node.toString());
 
+                File recipeFile = new File("usr\\recipes\\" + recipeTree.getFullNodeName(node.toString()));
 
-                recipePanelBuilder = new RecipePanelBuilder(node.toString());
-                add(recipePanelBuilder.buildRecipePanel(),BorderLayout.CENTER);
-                refresh();
-                //recipeViewPanel.setPage(recipeFile.toURI().toURL().toString());
+                if(recipeFile.exists()){
+                    recipePanelBuilder = new RecipePanelBuilder(recipeTree.getFullNodeName(node.toString()));
+                    add(recipePanelBuilder.buildRecipePanel(),BorderLayout.CENTER);
+                    refresh();
+                }
 
             }
         });
 
         recipeViewPanel = new RecipeViewPanel();
 
-        //add(recipeViewPanel, BorderLayout.CENTER);
         add(recipeTree, BorderLayout.WEST);
 
     }

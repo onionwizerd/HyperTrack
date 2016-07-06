@@ -10,6 +10,7 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.awt.*;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Vector;
 
@@ -20,6 +21,11 @@ public class XFileTree extends XPanel {
 
     private String rootDirectoryName = null;
     private JTree fileTree;
+
+    private DefaultMutableTreeNode rootDirectoryNode;
+
+    private ArrayList<String> displayNodeList = new ArrayList<>();
+    private ArrayList<String> fullyQualifiedNodeList = new ArrayList<>();
 
     public XFileTree(File rootDirectory, String rootDirectoryName) {
         setLayout(new BorderLayout());
@@ -46,7 +52,7 @@ public class XFileTree extends XPanel {
 
         String rootPath = rootDirectory.getPath();
 
-        DefaultMutableTreeNode rootDirectoryNode = new DefaultMutableTreeNode(rootDirectoryName);
+        rootDirectoryNode = new DefaultMutableTreeNode(rootDirectoryName);
 
         Vector dirList = new Vector();
 
@@ -76,14 +82,38 @@ public class XFileTree extends XPanel {
         }
 
         // Pass for files
-        for (int fnum = 0; fnum < files.size(); fnum++)
-            rootDirectoryNode.add(new DefaultMutableTreeNode(files.elementAt(fnum)));
+        for (int fnum = 0; fnum < files.size(); fnum++) {
+
+            addNode(files.elementAt(fnum).toString());
+        }
 
         return rootDirectoryNode;
     }
 
+    private void addNode(String nodeName){
+
+        String formattedName = nodeName.substring(0, nodeName.indexOf("."));
+
+        displayNodeList.add(formattedName);
+        fullyQualifiedNodeList.add(nodeName);
+
+        rootDirectoryNode.add(new DefaultMutableTreeNode(formattedName));
+
+
+    }
 
     public JTree getFileTree() {
         return fileTree;
+    }
+
+    public String getFullNodeName(String nodeName){
+
+        String fullNodeName = null;
+
+        if(displayNodeList.contains(nodeName)){
+            fullNodeName = fullyQualifiedNodeList.get(displayNodeList.indexOf(nodeName));
+        }
+
+        return fullNodeName;
     }
 }
