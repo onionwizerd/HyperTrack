@@ -1,5 +1,6 @@
 package com.company.calculators;
 
+import SwingX.components.XDivider;
 import SwingX.components.XPanel;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -73,48 +74,53 @@ public class BMICalculator extends XPanel {
             }
         });
 
-        XPanel heightContainer = new XPanel();
-        heightContainer.setLayout(new BoxLayout(heightContainer, BoxLayout.X_AXIS));
-        heightContainer.setTransparent(true);
-
-        heightContainer.add(heightLabel);
-        heightContainer.add(heightSpinner);
-
         JLabel dataLabel = new JLabel("Enter Data");
         dataLabel.setFont(new Font(weightLabel.getName(), Font.PLAIN, 25));
-
-        XPanel dataContainer = new XPanel();
-        dataContainer.setLayout(new BoxLayout(dataContainer, BoxLayout.Y_AXIS));
-        dataContainer.setTransparent(true);
-
-        dataContainer.add(dataLabel);
-        dataContainer.add(weightContainer);
-        dataContainer.add(heightContainer);
 
         JLabel resultsLabel = new JLabel("Results");
         resultsLabel.setFont(new Font(weightLabel.getName(), Font.PLAIN, 25));
 
         bmiLabel = new JLabel("0");
         bmiLabel.setFont(new Font(weightLabel.getName(), Font.PLAIN, 30));
-        bmiLabel.setAlignmentX(CENTER_ALIGNMENT);
 
         weightRangeLabel = new JLabel("Weight Range");
         weightRangeLabel.setFont(new Font(weightLabel.getName(), Font.PLAIN, 25));
 
-        XPanel resultsContainer = new XPanel();
-        resultsContainer.setLayout(new BoxLayout(resultsContainer, BoxLayout.Y_AXIS));
-        resultsContainer.setTransparent(true);
+        XPanel labelPanel = new XPanel();
+        labelPanel.setLayout(new BoxLayout(labelPanel, BoxLayout.Y_AXIS));
+        labelPanel.setTransparent(true);
 
-        resultsContainer.add(resultsLabel);
-        resultsContainer.add(bmiLabel);
-        resultsContainer.add(weightRangeLabel);
+        labelPanel.add(dataLabel);
+        labelPanel.add(new XDivider(0, 15));
+        labelPanel.add(heightLabel);
+        labelPanel.add(new XDivider(0, 15));
+        labelPanel.add(weightLabel);
+
+        XPanel spinnerPanel = new XPanel();
+        spinnerPanel.setLayout(new BoxLayout(spinnerPanel, BoxLayout.Y_AXIS));
+        spinnerPanel.setTransparent(true);
+
+        spinnerPanel.add(new XDivider(0, 50));
+        spinnerPanel.add(heightSpinner);
+        spinnerPanel.add(weightSpinner);
+
+        XPanel resultsPanel = new XPanel();
+        resultsPanel.setLayout(new BoxLayout(resultsPanel, BoxLayout.Y_AXIS));
+
+        resultsPanel.add(resultsLabel);
+        resultsPanel.add(new XDivider(0, 10));
+        resultsPanel.add(bmiLabel);
+        resultsPanel.add(new XDivider(0, 5));
+        resultsPanel.add(weightRangeLabel);
 
         XPanel rootContainer = new XPanel();
         rootContainer.setLayout(new BoxLayout(rootContainer, BoxLayout.X_AXIS));
         rootContainer.setTransparent(true);
 
-        rootContainer.add(dataContainer);
-        rootContainer.add(resultsContainer);
+        rootContainer.add(labelPanel);
+        rootContainer.add(spinnerPanel);
+        rootContainer.add(new XDivider(20, 0));
+        rootContainer.add(resultsPanel);
 
         setLayout(new BorderLayout());
 

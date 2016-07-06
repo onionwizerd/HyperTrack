@@ -30,7 +30,6 @@ public class DataEntryFrameFactory {
             Document doc = docBuilder.parse(DataEntryFrameFactory.class.getResourceAsStream("dataConfig.xml"));
             doc.normalize();
 
-
             Node rootNode = doc.getDocumentElement();
             Element rootElement = (Element) rootNode;
 
