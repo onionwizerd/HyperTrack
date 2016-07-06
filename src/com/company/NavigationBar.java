@@ -107,24 +107,6 @@ public class NavigationBar extends XToolBar{
             mainFrame.setContent(nutritionPanel);
         });
 
-        BufferedImage settingsIcon = null;
-        try {
-            settingsIcon = ImageIO.read(Main.class.getResource
-                    ("img/settings.png"));
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-
-        XButton settingsBtn = new XButton("");
-        settingsBtn.setTransparent(true);
-        settingsBtn.setHoverEffect(Color.LIGHT_GRAY);
-        settingsBtn.setIcon(new ImageIcon(settingsIcon));
-        settingsBtn.setToolTipText("Settings");
-        settingsBtn.addActionListener((ActionEvent evt) -> {
-            MainFrame mainFrame = Main.getMainFrame();
-            CalculatorPanel calculatorPanel = CalculatorPanel.getInstance();
-            mainFrame.setContent(calculatorPanel);
-        });
 
         BufferedImage runIcon = null;
         try {
@@ -181,6 +163,25 @@ public class NavigationBar extends XToolBar{
             MainFrame mainFrame = Main.getMainFrame();
             FitnessPanel fitnessPanel = new FitnessPanel("Cycling");
             mainFrame.setContent(fitnessPanel);
+        });
+
+        BufferedImage settingsIcon = null;
+        try {
+            settingsIcon = ImageIO.read(Main.class.getResource
+                    ("img/settings.png"));
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+        XButton settingsBtn = new XButton("");
+        settingsBtn.setTransparent(true);
+        settingsBtn.setHoverEffect(Color.LIGHT_GRAY);
+        settingsBtn.setIcon(new ImageIcon(settingsIcon));
+        settingsBtn.setToolTipText("Settings");
+        settingsBtn.addActionListener((ActionEvent evt) -> {
+            MainFrame mainFrame = Main.getMainFrame();
+            //CalculatorPanel calculatorPanel = CalculatorPanel.getInstance();
+            //mainFrame.setContent(calculatorPanel);
         });
 
         /*

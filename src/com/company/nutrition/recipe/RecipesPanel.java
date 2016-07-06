@@ -17,6 +17,7 @@ public class RecipesPanel extends XPanel implements PanelModel{
 
     XPanel viewPortPanel;
     RecipeViewPanel recipeViewPanel;
+    RecipePanelBuilder recipePanelBuilder;
 
     public RecipesPanel() {
         init();
@@ -34,18 +35,21 @@ public class RecipesPanel extends XPanel implements PanelModel{
                         .getPath().getLastPathComponent();
                 File recipeFile = new File("usr\\recipes\\" + node.toString());
 
-                try{
-                    recipeViewPanel.setPage(recipeFile.toURI().toURL().toString());
-                }catch (Exception malformedURLExcep){
-                    malformedURLExcep.printStackTrace();
-                }
+
+                recipePanelBuilder = new RecipePanelBuilder(node.toString());
+                add(recipePanelBuilder.buildRecipePanel(),BorderLayout.CENTER);
+                refresh();
+                //recipeViewPanel.setPage(recipeFile.toURI().toURL().toString());
+
             }
         });
 
         recipeViewPanel = new RecipeViewPanel();
 
-        add(recipeViewPanel, BorderLayout.CENTER);
+        //add(recipeViewPanel, BorderLayout.CENTER);
         add(recipeTree, BorderLayout.WEST);
 
     }
+
+
 }
