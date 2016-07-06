@@ -19,6 +19,8 @@ import java.util.Vector;
  */
 public class XFileTree extends XPanel {
 
+    private boolean displayFileExtensions = false;
+
     private String rootDirectoryName = null;
     private JTree fileTree;
 
@@ -92,7 +94,11 @@ public class XFileTree extends XPanel {
 
     private void addNode(String nodeName){
 
-        String formattedName = nodeName.substring(0, nodeName.indexOf("."));
+        String formattedName = nodeName;
+
+        if(!displayFileExtensions){
+            formattedName = nodeName.substring(0, nodeName.lastIndexOf("."));
+        }
 
         displayNodeList.add(formattedName);
         fullyQualifiedNodeList.add(nodeName);
@@ -115,5 +121,9 @@ public class XFileTree extends XPanel {
         }
 
         return fullNodeName;
+    }
+
+    public void setDisplayFileExtensions(boolean displayFileExtensions){
+        this.displayFileExtensions = displayFileExtensions;
     }
 }

@@ -3,7 +3,6 @@ package com.company.nutrition.recipe;
 import SwingX.components.tree.XFileTree;
 import SwingX.components.XPanel;
 import com.company.PanelModel;
-
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
