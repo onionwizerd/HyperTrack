@@ -10,33 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/calories_16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/diet_16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/diet_32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/serving.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/servings_16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/time.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/time_16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipeFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/usr/recipes/sample.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipeFactory.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/HyperTrack.jar" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/HyperTrack.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/db.lck" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/usr/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/NavigationBar.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/NavigationBar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/calculators/BMICalculator.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/calculators/BMICalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel$1.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipePanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipePanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/derby.log" afterPath="$PROJECT_DIR$/out/artifacts/HyperTrack_jar/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/NavigationBar.java" afterPath="$PROJECT_DIR$/src/com/company/NavigationBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" />
     </list>
     <ignored path="HyperTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,22 +79,22 @@
       <file leaf-file-name="RecipePanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5058573">
-              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.57933974">
+              <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#3122#3123#0" expanded="true" />
-                <element signature="e#3163#3164#0" expanded="true" />
-                <element signature="e#3202#3203#0" expanded="true" />
-                <element signature="e#3252#3253#0" expanded="true" />
-                <element signature="e#3299#3300#0" expanded="true" />
-                <element signature="e#3361#3362#0" expanded="true" />
-                <element signature="e#3408#3409#0" expanded="true" />
-                <element signature="e#3470#3471#0" expanded="true" />
-                <element signature="e#3510#3511#0" expanded="true" />
-                <element signature="e#3560#3561#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#3880#3881#0" expanded="true" />
+                <element signature="e#3921#3922#0" expanded="true" />
+                <element signature="e#3960#3961#0" expanded="true" />
+                <element signature="e#4010#4011#0" expanded="true" />
+                <element signature="e#4057#4058#0" expanded="true" />
+                <element signature="e#4119#4120#0" expanded="true" />
+                <element signature="e#4166#4167#0" expanded="true" />
+                <element signature="e#4228#4229#0" expanded="true" />
+                <element signature="e#4268#4269#0" expanded="true" />
+                <element signature="e#4318#4319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1220,22 +1198,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5058573">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.57933974">
+          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#3122#3123#0" expanded="true" />
-            <element signature="e#3163#3164#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3252#3253#0" expanded="true" />
-            <element signature="e#3299#3300#0" expanded="true" />
-            <element signature="e#3361#3362#0" expanded="true" />
-            <element signature="e#3408#3409#0" expanded="true" />
-            <element signature="e#3470#3471#0" expanded="true" />
-            <element signature="e#3510#3511#0" expanded="true" />
-            <element signature="e#3560#3561#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#3880#3881#0" expanded="true" />
+            <element signature="e#3921#3922#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#4010#4011#0" expanded="true" />
+            <element signature="e#4057#4058#0" expanded="true" />
+            <element signature="e#4119#4120#0" expanded="true" />
+            <element signature="e#4166#4167#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4268#4269#0" expanded="true" />
+            <element signature="e#4318#4319#0" expanded="true" />
           </folding>
         </state>
       </provider>

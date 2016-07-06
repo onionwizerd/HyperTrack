@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Wed Jul 06 17:42:14 CAT 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0155-c0df-b65a-000006b51af8 
+Wed Jul 06 18:10:52 CAT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0155-c0f9-e96d-000006b51c28 
 on database directory C:\Users\Josh\Documents\GitHub\HyperTrack\usr\database with class loader sun.misc.Launcher$AppClassLoader@5cad8086 
 Loaded from file:/C:/Users/Josh/Documents/GitHub/HyperTrack/src/com/company/lib/derby.jar
 java.vendor=Oracle Corporation

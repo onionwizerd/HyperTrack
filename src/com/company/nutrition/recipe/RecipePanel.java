@@ -1,5 +1,6 @@
 package com.company.nutrition.recipe;
 
+import SwingX.components.XDivider;
 import SwingX.components.XPanel;
 import com.company.Main;
 import com.company.nutrition.recipe.components.InfoLabel;
@@ -15,6 +16,7 @@ import java.io.IOException;
  */
 public class RecipePanel extends XPanel {
 
+    XPanel titlePanel = new XPanel();
     JLabel titleLabel = new JLabel("Title");
 
     XPanel infoPanel = new XPanel();
@@ -24,9 +26,11 @@ public class RecipePanel extends XPanel {
     InfoLabel dietLabel = new InfoLabel("Diet: ");
 
     XPanel ingredientsPanel = new XPanel();
+    XPanel ingredientsTitlePanel = new XPanel();
     JLabel ingredientsLabel = new JLabel("Ingredients");
 
     XPanel directionsPanel = new XPanel();
+    XPanel directionsTitlePanel = new XPanel();
     JLabel directionsLabel = new JLabel("Directions");
 
 
@@ -81,24 +85,39 @@ public class RecipePanel extends XPanel {
 
         dietLabel.setIcon(new ImageIcon(dietIcon));
 
+        titlePanel.setLayout(new BoxLayout(titlePanel, BoxLayout.X_AXIS));
+        titlePanel.add(titleLabel);
+        titlePanel.add(new XDivider(650, 0));
+
         infoPanel.setLayout(new BoxLayout(infoPanel, BoxLayout.X_AXIS));
         infoPanel.add(timeLabel);
         infoPanel.add(servingsLabel);
         infoPanel.add(caloriesLabel);
         infoPanel.add(dietLabel);
 
-        ingredientsLabel.setFont(new Font(titleLabel.getName(), Font.PLAIN, 35));
+        ingredientsLabel.setFont(new Font(ingredientsLabel.getName(), Font.PLAIN, 35));
+
+        ingredientsTitlePanel.setLayout(new BoxLayout(ingredientsTitlePanel, BoxLayout.X_AXIS));
+        ingredientsTitlePanel.add(ingredientsLabel);
+        ingredientsTitlePanel.add(new XDivider(580, 0));
+
         ingredientsPanel.setLayout(new BoxLayout(ingredientsPanel, BoxLayout.Y_AXIS));
-        ingredientsPanel.add(ingredientsLabel);
+        ingredientsPanel.add(ingredientsTitlePanel);
 
         directionsLabel.setFont(new Font(titleLabel.getName(), Font.PLAIN, 35));
-        directionsPanel.setLayout(new BoxLayout(directionsPanel, BoxLayout.Y_AXIS));
-        directionsPanel.add(directionsLabel);
 
-        add(titleLabel);
+        directionsTitlePanel.setLayout(new BoxLayout(directionsTitlePanel, BoxLayout.X_AXIS));
+        directionsTitlePanel.add(directionsLabel);
+        directionsTitlePanel.add(new XDivider(600, 0));
+
+        directionsPanel.setLayout(new BoxLayout(directionsPanel, BoxLayout.Y_AXIS));
+        directionsPanel.add(directionsTitlePanel);
+
+        add(titlePanel);
         add(infoPanel);
         add(ingredientsPanel);
         add(directionsPanel);
+
 
     }
 
