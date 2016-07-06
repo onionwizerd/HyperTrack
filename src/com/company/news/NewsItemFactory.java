@@ -48,7 +48,11 @@ public class NewsItemFactory {
             DocumentBuilder docBuilder = (DocumentBuilderFactory.newInstance())
                     .newDocumentBuilder();
 
-            Document doc = docBuilder.parse(new URL("http://52.37.148.175/news.xml").openStream());
+            // For online XML document
+            //Document doc = docBuilder.parse(new URL("http://52.37.148.1/news.xml").openStream());
+
+            //For local XML document
+            Document doc = docBuilder.parse(new File("usr/news.xml"));
             doc.normalize();
 
             Node rootNode = doc.getDocumentElement();
