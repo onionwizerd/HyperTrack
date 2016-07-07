@@ -15,7 +15,7 @@ public class ConnectionManager implements Runnable{
     private String protocol = "jdbc:derby:";
     private String databaseName = "usr\\database";
 
-    public ConnectionManager() {
+    public ConnectionManager(   ) {
     }
 
     public ConnectionManager(String driver, String protocol, String databaseName) {

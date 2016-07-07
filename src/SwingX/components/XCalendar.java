@@ -82,7 +82,7 @@ public class XCalendar extends JPanel implements XModel {
 
                     System.out.println(model.getValueAt(row, column));
                 }else if(e.getClickCount() > 1){
-
+                    e.consume();
                 }
             }
         });

@@ -35,7 +35,6 @@ public class XMain {
         frame.setUndecorated(true);
         frame.setTitle("SwingX");
 
-
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.setMinimumSize(new Dimension(500, 500));
         mainPanel.setBackground(Color.WHITE);
@@ -58,10 +57,7 @@ public class XMain {
 
         toolBar.add(button);
 
-
-
         XFrameBar frameBar  = new XFrameBar(frame);
-
 
         mainPanel.add(frameBar, BorderLayout.NORTH);
         mainPanel.add(calendar, BorderLayout.CENTER);

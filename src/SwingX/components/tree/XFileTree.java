@@ -44,7 +44,6 @@ public class XFileTree extends XPanel {
             }
         });
 
-
         XScrollPanel scrollpane = new XScrollPanel();
         scrollpane.getViewport().add(fileTree);
         add(BorderLayout.CENTER, scrollpane);
@@ -67,7 +66,6 @@ public class XFileTree extends XPanel {
 
         File f;
         Vector files = new Vector();
-
 
         // Pass for directories
         for (int i = 0; i < dirList.size(); i++) {

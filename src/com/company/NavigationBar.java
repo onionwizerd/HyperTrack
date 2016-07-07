@@ -4,7 +4,7 @@ package com.company;
 import SwingX.XMain;
 import SwingX.components.XButton;
 import SwingX.components.XToolBar;
-import com.company.calculators.CalculatorPanel;
+import com.company.tools.ToolPanel;
 import com.company.fitness.FitnessPanel;
 import com.company.nutrition.NutritionPanel;
 import com.company.news.NewsFeedPanel;
@@ -84,8 +84,8 @@ public class NavigationBar extends XToolBar{
         toolsBtn.setToolTipText("Tools");
         toolsBtn.addActionListener((ActionEvent evt) -> {
             MainFrame mainFrame = Main.getMainFrame();
-            CalculatorPanel calculatorPanel = CalculatorPanel.getInstance();
-            mainFrame.setContent(calculatorPanel);
+            ToolPanel toolPanel = ToolPanel.getInstance();
+            mainFrame.setContent(toolPanel);
         });
 
         BufferedImage nutritionIcon = null;
@@ -180,7 +180,7 @@ public class NavigationBar extends XToolBar{
         settingsBtn.setToolTipText("Settings");
         settingsBtn.addActionListener((ActionEvent evt) -> {
             MainFrame mainFrame = Main.getMainFrame();
-            //CalculatorPanel calculatorPanel = CalculatorPanel.getInstance();
+            //ToolPanel calculatorPanel = ToolPanel.getInstance();
             //mainFrame.setContent(calculatorPanel);
         });
 
