@@ -6,18 +6,18 @@ import java.io.File;
 /**
  * Created by Josh on 2016-07-07.
  */
-public class ToolTreeNode extends DefaultMutableTreeNode {
+public class ToolNode extends DefaultMutableTreeNode {
 
     File jarFile = null;
 
-    public ToolTreeNode() {
+    public ToolNode() {
     }
 
-    public ToolTreeNode(Object userObject, boolean allowsChildren) {
+    public ToolNode(Object userObject, boolean allowsChildren) {
         super(userObject, allowsChildren);
     }
 
-    public ToolTreeNode(Object userObject) {
+    public ToolNode(Object userObject) {
         super(userObject);
     }
 

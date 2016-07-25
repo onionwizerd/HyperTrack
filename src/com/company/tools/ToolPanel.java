@@ -17,7 +17,6 @@ package com.company.tools;
 import SwingX.components.XPanel;
 import SwingX.components.XScrollPanel;
 import com.company.PanelModel;
-import com.company.tools.calculators.BMICalculator;
 
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
@@ -38,6 +37,7 @@ public class ToolPanel extends XScrollPanel implements PanelModel{
 
     JTree toolTree;
     DefaultMutableTreeNode calculatorsNode;
+    DefaultMutableTreeNode miscNode;
 
     ArrayList<File> plugins = null;
 
@@ -57,14 +57,15 @@ public class ToolPanel extends XScrollPanel implements PanelModel{
         plugins = plugInLoader.getPlugins();
 
         calculatorsNode = new DefaultMutableTreeNode("Calculators");
-        //calculatorsNode.insert(bmiNode, calculatorsNode.getChildCount());
+        miscNode = new DefaultMutableTreeNode("Misc");
 
         DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode("Tools");
         rootNode.insert(calculatorsNode, 0);
+        rootNode.insert(miscNode, 1);
 
         toolTree = new JTree(rootNode);
         toolTree.setBackground(Color.WHITE);
-        toolTree.addTreeSelectionListener(tse -> toolTreeValueChanged(tse));
+        toolTree.addTreeSelectionListener(tse -> treeValueChanged(tse));
 
         centerPanel = new XPanel();
         centerPanel.setTransparent(true);
@@ -109,7 +110,7 @@ public class ToolPanel extends XScrollPanel implements PanelModel{
                 e.printStackTrace();
             }
 
-            ToolTreeNode pluginNode = new ToolTreeNode(name);
+            ToolNode pluginNode = new ToolNode(name);
             pluginNode.setJarFile(pluginFile);
 
             switch (category){
@@ -123,12 +124,12 @@ public class ToolPanel extends XScrollPanel implements PanelModel{
 
     }
 
-    private void toolTreeValueChanged(TreeSelectionEvent tse) {
+    private void treeValueChanged(TreeSelectionEvent tse) {
         String node = tse.getNewLeadSelectionPath().getLastPathComponent().toString();
 
-        if(toolTree.getLastSelectedPathComponent() instanceof ToolTreeNode){
+        if(toolTree.getLastSelectedPathComponent() instanceof ToolNode){
 
-            ToolTreeNode selectedNode = (ToolTreeNode) toolTree.getLastSelectedPathComponent();
+            ToolNode selectedNode = (ToolNode) toolTree.getLastSelectedPathComponent();
             System.out.println(selectedNode.getJarFile());
 
             try {

@@ -19,6 +19,8 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by Josh on 4/30/2016.
@@ -194,24 +196,38 @@ public class DataPanel extends XPanel implements PanelModel{
             @Override
             public void mouseClicked(MouseEvent e) {
 
-                int[] rows = dataTable.getSelectedRows();
+                try{
+                    int[] rows = dataTable.getSelectedRows();
 
-                if(rows.length == 0){
-                    JOptionPane.showMessageDialog(null, "No records are selected");
-                }else if(JOptionPane.showConfirmDialog(null, "Are you sure you want to permanently delete " +
+                    if(rows.length == 0){
+                        JOptionPane.showMessageDialog(null, "No records are selected");
+                    }else if(JOptionPane.showConfirmDialog(null, "Are you sure you want to permanently delete " +
                             rows.length + " selected record(s)") == 0){
 
-                        for(int i = 0; i < rows.length; i++){
-                            deleteRecord(Integer.parseInt(dataModel.getValueAt(dataTable.getSelectedRow(), 4)
-                                    .toString()));
-                            System.out.println("removed row");
-                            dataModel.removeRow(dataTable.getSelectedRow());
+                        int rowsLength = rows.length;
+                        ArrayList<String> recordsToRemove = new ArrayList<String>();
 
+                        for(int i = 1; i <= rowsLength; i++){
+
+                            recordsToRemove.add(dataModel.getValueAt(rows[0], 4).toString());
+
+                            dataModel.removeRow(rows[0]);
+                            
+
+                        }
+
+                        Iterator recordsIterator = recordsToRemove.iterator();
+                        while(recordsIterator.hasNext()){
+                            deleteRecord(Integer.parseInt((String) recordsIterator.next()));
                         }
 
                         dataTable.revalidate();
                         dataTable.repaint();
                     }
+                }catch (Exception exc){
+                    System.out.println("Exception deleting records");
+                    exc.printStackTrace();
+                }
             }
 
             @Override

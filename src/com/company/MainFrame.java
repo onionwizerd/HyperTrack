@@ -54,7 +54,7 @@ public class MainFrame extends XFrame{
         setBackground(Color.WHITE);
         setIconImage(bufferedImageIcon);
         setTitle("HyperTrack");
-        setResizable(false);
+        //setResizable(false);
 
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setMinimumSize(this.getSize());
