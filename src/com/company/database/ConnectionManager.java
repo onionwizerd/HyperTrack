@@ -13,7 +13,7 @@ public class ConnectionManager implements Runnable{
     private Connection connection;
     private String driver = "org.apache.derby.jdbc.EmbeddedDriver";
     private String protocol = "jdbc:derby:";
-    private String databaseName = "usr\\database";
+    private String databaseName = "usr/database";
 
     public ConnectionManager(   ) {
     }
@@ -29,6 +29,20 @@ public class ConnectionManager implements Runnable{
     }
 
     public void connect(){
+
+        switch(System.getProperty("os.name")){
+            case "Linux":
+                databaseName = "usr/database";
+                break;
+            case "Windows":
+                databaseName = "usr\\database";
+                break;
+            default:
+                databaseName = "usr\\database";
+                break;
+
+        }
+
         try {
             Class.forName(driver).newInstance();
 
