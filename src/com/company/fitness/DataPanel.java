@@ -119,7 +119,7 @@ public class DataPanel extends XPanel implements PanelModel{
         dataTable.setModel(dataModel);
 
         Object columnHeaders[] = new Object[]{"Date (YYYY-MM-DD)", "Distance (KM)", "Time (HH:MM:SS)",
-                "Speed (KM/H)", "ID"};
+                "Speed (KM/H)", "ID", "Terrain"};
         dataModel.setColumnIdentifiers(columnHeaders);
 
         populateDataModel();
@@ -207,12 +207,11 @@ public class DataPanel extends XPanel implements PanelModel{
                         int rowsLength = rows.length;
                         ArrayList<String> recordsToRemove = new ArrayList<String>();
 
-                        for(int i = 1; i <= rowsLength; i++){
+                        for(int i = 0; i <= rowsLength; i++){
 
-                            recordsToRemove.add(dataModel.getValueAt(rows[0], 4).toString());
+                            //recordsToRemove.add(dataModel.getValueAt(rows[0], 4).toString());
 
-                            dataModel.removeRow(rows[0]);
-                            
+                            dataModel.removeRow(rows[i]);
 
                         }
 

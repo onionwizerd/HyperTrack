@@ -17,29 +17,25 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
- * 
+ *
  * @author Josh Beaver
  * @version 0.1
  * @since 2016-03-16
- * 
+ *
  * <h1>News Item Factory</h1>
  * <p></p>
- * 
- * <h2>Notes</h2>
- * <p>Design Pattern: Factory</p>
- * <p>Data Sources: news.xml</p>
- * 
+ *
  */
 
 public class NewsItemFactory {
-    
+
     private boolean hasNext = true;
-    
+
     private int currentItem;
     private int totalItems;
-    
+
     NodeList postList;
-    
+
     public NewsItemFactory() {
 
         try {
@@ -74,52 +70,54 @@ public class NewsItemFactory {
         } catch (IOException ioExcep) {
             System.out.println("IO Exception");
             ioExcep.printStackTrace();
-        }catch(Exception e){}
-        
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
     }
-    
-    
+
+
     public NewsItem createNewsItem(){
         Node postNode = postList.item(currentItem);
         Element postElement = (Element)postNode;
-        
+
         System.out.println("Currently at news item: " + currentItem);
-        
+
         Node titleNode = postElement.getElementsByTagName("title").item(0);
         Element titleElement = (Element)titleNode;
         String title = titleElement.getTextContent();
-        
+
         Node imageNode = postElement.getElementsByTagName("image").item(0);
         Element imageElement = (Element)imageNode;
         BufferedImage image = null;
         try{
             image = ImageIO.read((new URL(imageElement.getTextContent())));
         }catch(IOException ioExcep){
-           ioExcep.printStackTrace();
+            ioExcep.printStackTrace();
         }
-        
+
         Node descNode = postElement.getElementsByTagName("desc").item(0);
         Element descElement = (Element)descNode;
         String desc = descElement.getTextContent();
-        
+
         Node urlNode = postElement.getElementsByTagName("url").item(0);
         Element urlElement = (Element)urlNode;
         String url = urlElement.getTextContent();
-        
+
         NewsItem newsItem = new NewsItem(title, desc, url, image);
-        
+
         currentItem++;
-        
-        return newsItem; 
+
+        return newsItem;
     }
 
-    
+
     public boolean hasNext(){
-        
+
         if(currentItem == totalItems){
             hasNext = false;
         }
-        
+
         return hasNext;
     }
 
@@ -143,3 +141,4 @@ public class NewsItemFactory {
         this.hasNext = hasNext;
     }
 }
+
