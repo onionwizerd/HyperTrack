@@ -18,6 +18,8 @@ public class RecipesPanel extends XPanel implements PanelModel{
     RecipeViewPanel recipeViewPanel;
     RecipePanelBuilder recipePanelBuilder;
 
+    String rootDirectotyName = "";
+
     public RecipesPanel() {
         init();
     }
@@ -26,14 +28,28 @@ public class RecipesPanel extends XPanel implements PanelModel{
     public void init() {
         setLayout(new BorderLayout());
 
-        File rootDirectory = new File("usr\\recipes");
+
+        switch(System.getProperty("os.name")){
+            case "Linux":
+                rootDirectotyName = "usr/recipes/";
+                break;
+            case "Windows":
+                rootDirectotyName = "usr\\recipes\\";
+                break;
+            default:
+                rootDirectotyName = "usr\\recipes\\";
+                break;
+
+        }
+
+        File rootDirectory = new File(rootDirectotyName);
         XFileTree recipeTree = new XFileTree(rootDirectory, "Recipes");
         recipeTree.getFileTree().addTreeSelectionListener(new TreeSelectionListener() {
             public void valueChanged(TreeSelectionEvent e) {
                 DefaultMutableTreeNode node = (DefaultMutableTreeNode) e
                         .getPath().getLastPathComponent();
 
-                File recipeFile = new File("usr\\recipes\\" + recipeTree.getFullNodeName(node.toString()));
+                File recipeFile = new File(rootDirectotyName + recipeTree.getFullNodeName(node.toString()));
 
                 if(recipeFile.exists()){
                     recipePanelBuilder = new RecipePanelBuilder(recipeTree.getFullNodeName(node.toString()));

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sinetfactory">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/com/company/lib/sinetfactory.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

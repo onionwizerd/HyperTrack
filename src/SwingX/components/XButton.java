@@ -44,6 +44,8 @@ public class XButton extends JButton implements XModel {
         setBackground(Color.WHITE);   
         setFocusPainted(false);
         setHoverEffect(Color.LIGHT_GRAY);
+
+
     }
     
     @Override

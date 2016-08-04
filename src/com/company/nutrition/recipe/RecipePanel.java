@@ -2,6 +2,8 @@ package com.company.nutrition.recipe;
 
 import SwingX.components.XDivider;
 import SwingX.components.XPanel;
+import SwingX.components.XScrollPanel;
+import SwingX.components.XTextArea;
 import com.company.Main;
 import com.company.nutrition.recipe.components.InfoLabel;
 
@@ -27,11 +29,17 @@ public class RecipePanel extends XPanel {
 
     XPanel ingredientsPanel = new XPanel();
     XPanel ingredientsTitlePanel = new XPanel();
-    JLabel ingredientsLabel = new JLabel("Ingredients");
+    XScrollPanel ingredientsScrollPanel = new XScrollPanel();
+    XPanel ingredientsContentPanel = new XPanel();
+    XTextArea ingredientsTextArea = new XTextArea();
+    JLabel ingredientsLabel = new JLabel("  Ingredients");
 
     XPanel directionsPanel = new XPanel();
     XPanel directionsTitlePanel = new XPanel();
-    JLabel directionsLabel = new JLabel("Directions");
+    XScrollPanel directionsScrollPanel = new XScrollPanel();
+    XPanel directionsContentPanel = new XPanel();
+    XTextArea directionsTextArea = new XTextArea();
+    JLabel directionsLabel = new JLabel("  Directions");
 
 
     public RecipePanel() {
@@ -101,8 +109,21 @@ public class RecipePanel extends XPanel {
         ingredientsTitlePanel.add(ingredientsLabel);
         ingredientsTitlePanel.add(new XDivider(580, 0));
 
+        //ingredientsTextArea.setBackground(Color.GRAY);
+        ingredientsTextArea.setMaximumSize(new Dimension(1000, 150));
+        ingredientsTextArea.setEditable(false);
+
+        ingredientsContentPanel.setLayout(new BoxLayout(ingredientsContentPanel, BoxLayout.X_AXIS));
+        ingredientsContentPanel.add(new XDivider(50, 0));
+        ingredientsContentPanel.add(ingredientsTextArea);
+
+        ingredientsScrollPanel.setViewportView(ingredientsContentPanel);
+        ingredientsScrollPanel.setMaximumSize(new Dimension(750, 150));
+
         ingredientsPanel.setLayout(new BoxLayout(ingredientsPanel, BoxLayout.Y_AXIS));
         ingredientsPanel.add(ingredientsTitlePanel);
+        ingredientsPanel.add(new XDivider(0, 5));
+        ingredientsPanel.add(ingredientsScrollPanel);
 
         directionsLabel.setFont(new Font(titleLabel.getName(), Font.PLAIN, 35));
 
@@ -110,23 +131,41 @@ public class RecipePanel extends XPanel {
         directionsTitlePanel.add(directionsLabel);
         directionsTitlePanel.add(new XDivider(600, 0));
 
+        directionsTextArea.setMaximumSize(new Dimension(600, 150));
+        directionsTextArea.setEditable(false);
+        directionsTextArea.setLineWrap(true);
+
+        directionsContentPanel.setLayout(new BoxLayout(directionsContentPanel, BoxLayout.X_AXIS));
+        directionsContentPanel.add(new XDivider(10, 0));
+        directionsContentPanel.add(directionsTextArea);
+        directionsContentPanel.add(new XDivider(150, 0));
+
+        directionsScrollPanel.setViewportView(directionsContentPanel);
+        directionsScrollPanel.setMaximumSize(new Dimension(750, 250));
+
         directionsPanel.setLayout(new BoxLayout(directionsPanel, BoxLayout.Y_AXIS));
         directionsPanel.add(directionsTitlePanel);
+        directionsPanel.add(new XDivider(0, 5));
+        directionsPanel.add(directionsScrollPanel);
 
         add(titlePanel);
+        add(new XDivider(0, 10));
         add(infoPanel);
+        add(new XDivider(0, 10));
         add(ingredientsPanel);
+        add(new XDivider(0, 10));
         add(directionsPanel);
-
+        add(new XDivider(0, 10));
 
     }
 
     public void setTitle(String title){
-        titleLabel.setText(title);
+        titleLabel.setText("  " + title);
     }
 
     public void setTime(String time){
         timeLabel.setText("Time: " + time);
+        refresh();
     }
 
     public void setServings(String servings){
@@ -137,8 +176,16 @@ public class RecipePanel extends XPanel {
         caloriesLabel.setText("Calories: " + calories);
     }
 
-    private void setDiet(String diet){
+    public void setDiet(String diet){
         dietLabel.setText("Diet: " + diet);
+    }
+
+    public void addIngredient(String ingredientText){
+        ingredientsTextArea.append(ingredientText + "\n");
+    }
+
+    public void addDirection(String directionText){
+        directionsTextArea.append(directionText + "\n \n");
     }
 
 

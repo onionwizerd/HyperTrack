@@ -12,6 +12,7 @@ public class FitnessPanel extends XTabbedPane implements PanelModel{
 
     private AnalysisPanel analysisPanel;
     private DataPanel dataPanel;
+    private GoalsPanel goalsPanel;
     private String tableName;
 
     public FitnessPanel(String tableName) {
@@ -28,9 +29,12 @@ public class FitnessPanel extends XTabbedPane implements PanelModel{
 
         analysisPanel = new AnalysisPanel(tableName);
         dataPanel = new DataPanel(tableName);
+        goalsPanel = new GoalsPanel();
+
 
         add("Data", dataPanel);
         add("Analysis", analysisPanel);
+        add("Goals", goalsPanel);
 
         setOpaque(true);
 

@@ -188,7 +188,7 @@ public class DataPanel extends XPanel implements PanelModel{
 
         XButton deleteRecordBtn = new XButton("Delete");
         deleteRecordBtn.setMinimumSize(new Dimension(70, 50));
-        deleteRecordBtn.setMaximumSize(new Dimension(70, 50));
+        deleteRecordBtn.setMaximumSize(new Dimension(80, 50));
         deleteRecordBtn.setMargin(new Insets(0,10,0,10));
         deleteRecordBtn.setBackground(Color.WHITE);
         deleteRecordBtn.setHoverEffect(Color.LIGHT_GRAY);
@@ -196,6 +196,15 @@ public class DataPanel extends XPanel implements PanelModel{
             @Override
             public void mouseClicked(MouseEvent e) {
 
+                int[] rows = dataTable.getSelectedRows();
+
+                int row = dataTable.getSelectedRow();
+
+                deleteRecord(Integer.parseInt(dataModel.getValueAt(row, 4).toString()));
+                dataModel.removeRow(row);
+
+                // Code for deleting mutliple rows (still buggy)
+                /*
                 try{
                     int[] rows = dataTable.getSelectedRows();
 
@@ -227,6 +236,7 @@ public class DataPanel extends XPanel implements PanelModel{
                     System.out.println("Exception deleting records");
                     exc.printStackTrace();
                 }
+                */
             }
 
             @Override
@@ -279,7 +289,7 @@ public class DataPanel extends XPanel implements PanelModel{
         dataTable.revalidate();
         dataTable.repaint();
 
-        Object rowData[] = new Object[5];
+        Object rowData[] = new Object[6];
         try {
 
             connection = DatabaseManager.getInstance().getConnectionManager().getConnection();
@@ -296,6 +306,7 @@ public class DataPanel extends XPanel implements PanelModel{
                 rowData[2] = resultSet.getTime("time");
                 rowData[3] = resultSet.getDouble("speed");
                 rowData[4] = resultSet.getInt("id");
+                rowData[5] = resultSet.getString("terrain");
 
                 if(resultSet.getInt("id") > latestID) latestID = resultSet.getInt("id");
 
@@ -316,7 +327,8 @@ public class DataPanel extends XPanel implements PanelModel{
                     + "'" + rowData[1] + "'" + ", " // date
                     + rowData[2] + ", " // distance
                     + "'" + rowData[3] + "'" + ", " // time
-                    + rowData[4] // speed
+                    + rowData[4] + ", "// speed
+                    + "'" + rowData[5] + "'" // terrain
                     +")");
 
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO " + tableName
@@ -325,7 +337,8 @@ public class DataPanel extends XPanel implements PanelModel{
                     + "'" + rowData[1] + "'" + ", " // date
                     + rowData[2] + ", " // distance
                     + "'" + rowData[3] + "'" + ", " // time
-                    + rowData[4] // speed
+                    + rowData[4] + ", " // speed
+                    + "'" + rowData[5] + "'" // terrain
                     +")");
 
             preparedStatement.executeUpdate();
@@ -352,7 +365,8 @@ public class DataPanel extends XPanel implements PanelModel{
                     + "date=" + "'" + rowData[1] + "'" + ", " // date
                     + "distance=" + rowData[2] + ", " // distance
                     + "time=" + "'" + rowData[3] + "'" + ", " // time
-                    + "speed=" + rowData[4] // speed
+                    + "speed=" + rowData[4] + ", " // speed
+                    + "terrain='" + rowData[5] + "'" // terrain
                     + " WHERE id = " + rowData[0]);
 
             preparedStatement.executeUpdate();

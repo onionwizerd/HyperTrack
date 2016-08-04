@@ -1,16 +1,4 @@
-/**
- *
- * @author Josh Beaver
- * @version 1.0
- * @since 2016-04-09
- *
- * <h1>Food Panel</h1>
- * <p></p>
- *
- * <h2>Notes</h2>
- * <p>Design Pattern: Singleton</p>
- *
- */
+
 package com.company.nutrition;
 
 import SwingX.components.XTabbedPane;
@@ -18,6 +6,14 @@ import com.company.PanelModel;
 import com.company.nutrition.recipe.RecipesPanel;
 
 import java.awt.*;
+
+/**
+ *
+ * @author Josh Beaver
+ * @version 1.0
+ * @since 2016-04-09
+ *
+ */
 
 public class NutritionPanel extends XTabbedPane implements PanelModel{
 
@@ -27,6 +23,9 @@ public class NutritionPanel extends XTabbedPane implements PanelModel{
         init();
     }
 
+    /**
+     * Initialises the Nutrition Panel UI
+     */
     @Override
     public void init() {
 

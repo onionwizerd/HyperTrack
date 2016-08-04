@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="HyperTrack:jar" />
@@ -7,23 +11,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7c8d4cd-1ceb-4b42-b2ff-96e8cb8fe14e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/XFrameBar.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/XFrameBar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/tree/XFileTree.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/tree/XFileTree.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/cloud.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/cloud_128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/loadingJar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/loadingRing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/logout_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/ppIcon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/upload_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/img/webcam_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/bridj-0.6.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/javax.mail.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/mysql-connector-java-3.1.14-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/sinetfactory.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/slf4j-api-1.7.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/lib/webcam-capture-0.3.10.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bridj_0_6_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_3_1_14_bin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_eclipse_swt_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sinetfactory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/webcam_capture_0_3_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/borders/RoundedBorder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/components/XLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/components/XPasswordField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/components/XTextArea.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwingX/components/XTextField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/AccountManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/Backup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/CloudPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/DatabaseManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/FileChooser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/Login.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/LoginPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/ProfilePictureUpdater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/SignUp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/SignUpPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/Uploader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/cloud/WebCamPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/email/Email.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/fitness/GoalsPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/settings/TerrainEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/utilities/ImageUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/usr/recipes/Recipe.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/dataConfig.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml" afterPath="$PROJECT_DIR$/usr/dataconfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/XButton$1.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/XButton$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/XButton.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/SwingX/components/XButton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/NavigationBar.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/NavigationBar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrame.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/DistanceComponent.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/DistanceComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/TimeComponent.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/components/TimeComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$1.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrameFactory.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/data/dataentry/DataEntryFrameFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/database/ConnectionManager.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/database/ConnectionManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$4.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/DataPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/news/NewsItem.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/news/NewsItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/FitnessPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/fitness/FitnessPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/news/NewsItemFactory.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/news/NewsItemFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipePanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipePanelBuilder.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipePanelBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel$1.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/RecipesPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/components/InfoLabel.class" afterPath="$PROJECT_DIR$/out/production/HyperTrack/com/company/nutrition/recipe/components/InfoLabel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/db.lck" afterPath="$PROJECT_DIR$/usr/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/log1.dat" afterPath="$PROJECT_DIR$/usr/database/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/usr/database/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c4a0.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c4a0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c4b0.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c4b0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c4c0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/c90.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/ca1.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/ca1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/database/seg0/cb1.dat" afterPath="$PROJECT_DIR$/usr/database/seg0/cb1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HyperTrack.iml" afterPath="$PROJECT_DIR$/HyperTrack.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/database/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/com/company/database/ConnectionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwingX/components/XButton.java" afterPath="$PROJECT_DIR$/src/SwingX/components/XButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/NavigationBar.java" afterPath="$PROJECT_DIR$/src/com/company/NavigationBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" afterPath="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" afterPath="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/fitness/FitnessPanel.java" afterPath="$PROJECT_DIR$/src/com/company/fitness/FitnessPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/news/NewsItemFactory.java" afterPath="$PROJECT_DIR$/src/com/company/news/NewsItemFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/NutritionPanel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/NutritionPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java" afterPath="$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/derby.log" afterPath="$PROJECT_DIR$/usr/derby.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/news.xml" afterPath="$PROJECT_DIR$/usr/news.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/recipes.xml" afterPath="$PROJECT_DIR$/usr/recipes.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usr/recipes/Sample.xml" afterPath="$PROJECT_DIR$/usr/recipes/Sample.xml" />
     </list>
     <ignored path="HyperTrack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,50 +119,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="DataPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/fitness/DataPanel.java">
+      <file leaf-file-name="NutritionPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/NutritionPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="class#1462:3798" expanded="false" />
-                <element signature="e#3822#3988#0" expanded="false" />
-                <element signature="e#3987#3988#0" expanded="false" />
-                <element signature="class#5029:6517" expanded="false" />
-                <element signature="e#7539#7547#0" expanded="false" />
-                <element signature="e#9410#9411#0" expanded="false" />
-                <element signature="e#9442#9443#0" expanded="false" />
-                <element signature="e#13640#13641#0" expanded="false" />
-                <element signature="e#13705#13706#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XTabbedPane.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SwingX/components/XTabbedPane.java">
+      <file leaf-file-name="ImageUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/utilities/ImageUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#234#235#0" expanded="false" />
-                <element signature="e#256#257#0" expanded="false" />
-                <element signature="e#514#515#0" expanded="false" />
-                <element signature="e#556#557#0" expanded="false" />
-                <element signature="e#614#615#0" expanded="false" />
-                <element signature="e#646#647#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/database/ConnectionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="330">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -116,57 +162,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipeViewPanel.java" />
-        <option value="$PROJECT_DIR$/usr/recipes/sample.html" />
-        <option value="$PROJECT_DIR$/src/com/company/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/XFileTree.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/tree/XFileTree.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/table/XTable.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/XButton.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/tree/XDefaultMutableTreeNode.java" />
-        <option value="$PROJECT_DIR$/src/com/company/graph/GraphItem.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/Format.java" />
-        <option value="$PROJECT_DIR$/src/com/company/fitness/AnalysisPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/graph/GraphFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/DataEntryFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataConfig.xml" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/ComponentLabel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryCompoent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponentModel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/TerrainComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/framebar/XFrameBar.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/XFrameBar.java" />
-        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/company/NavigationBar.java" />
-        <option value="$PROJECT_DIR$/usr/recipes/Sample.xml" />
-        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipeFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java" />
-        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/tree/XFileTree.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/components/XCalendar.java" />
-        <option value="$PROJECT_DIR$/src/com/company/calculators/BMICalculator.java" />
-        <option value="$PROJECT_DIR$/src/com/company/tools/calculators/CalculatorPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/tools/CalculatorPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/tools/ToolInterface.java" />
-        <option value="$PROJECT_DIR$/src/SwingX/XMain.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/tools/PlugInLoader.java" />
         <option value="$PROJECT_DIR$/src/com/company/tools/ToolTreeNode.java" />
         <option value="$PROJECT_DIR$/src/com/company/tools/ToolPanel.java" />
         <option value="$PROJECT_DIR$/src/com/company/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/news/NewsItemFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" />
         <option value="$PROJECT_DIR$/src/com/company/database/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/SwingX/components/XTextField.java" />
+        <option value="$PROJECT_DIR$/src/SwingX/components/XPasswordField.java" />
+        <option value="$PROJECT_DIR$/src/SwingX/components/XTextArea.java" />
+        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java" />
+        <option value="$PROJECT_DIR$/usr/dataconfig.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/settings/TerrainEditor.java" />
+        <option value="$PROJECT_DIR$/src/com/company/fitness/FitnessPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/fitness/GoalsPanel.java" />
+        <option value="$PROJECT_DIR$/src/SwingX/components/XGifImagePanel.java" />
+        <option value="$PROJECT_DIR$/src/SwingX/components/XLabel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/DatabaseManager.java" />
+        <option value="$PROJECT_DIR$/src/SwingX/components/XButton.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/AccountManager.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/Backup.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/ProfilePictureUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/FileChooser.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/DragnDropPane.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/DragnDrop/DropTargetHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/DragnDrop/DragnDropPane.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/WebCamPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/news/NewsFeedPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/news/NewsFactory.java" />
+        <option value="$PROJECT_DIR$/usr/news.xml" />
+        <option value="$PROJECT_DIR$/src/SwingX/borders/RoundedBorder.java" />
+        <option value="$PROJECT_DIR$/src/com/company/NavigationBar.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/ProfilePictureUpdater.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/Login.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/CloudPanel.java" />
+        <option value="$PROJECT_DIR$/usr/recipes.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/email/email.java" />
+        <option value="$PROJECT_DIR$/src/com/company/email/Email.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/Uploader.java" />
+        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java" />
+        <option value="$PROJECT_DIR$/usr/recipes/Sample.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/LoginPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/fitness/DataPanel.java" />
+        <option value="$PROJECT_DIR$/usr/recipes/Recipe.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/SignUpPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/cloud/SignUp.java" />
+        <option value="$PROJECT_DIR$/src/com/company/news/NewsItemFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/company/nutrition/NutritionPanel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/utilities/ImageUtil.java" />
       </list>
     </option>
   </component>
@@ -210,6 +256,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,38 +286,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="usr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HyperTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HyperTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HyperTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HyperTrack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -310,14 +326,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="utilities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -326,30 +340,31 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="hypertrack" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.company.tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/company/img" />
+      <recent name="$PROJECT_DIR$/usr/recipes" />
+      <recent name="$PROJECT_DIR$/src/com/company/lib" />
+      <recent name="$PROJECT_DIR$/usr" />
+      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\plugins\tools" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\SwingX\img\16x16" />
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\com\company\data\dataentry" />
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\com\company\img" />
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\usr\recipes" />
       <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\usr\recipes\category" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.company.tools" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\plugins\tools" />
-      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\plugins" />
-      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\com\company\lib" />
-      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\src\com\company\img" />
-      <recent name="C:\Users\Josh\Documents\GitHub\HyperTrack\usr" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -700,58 +715,58 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253493" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61976045" sideWeight="0.49732906" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66979164" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35630342" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29010418" sideWeight="0.49385247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17895299" sideWeight="0.49385247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.619403" sideWeight="0.50267094" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38831967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38822356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28694713" sideWeight="0.50614756" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75478065" sideWeight="0.504698" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Line Counter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889345" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294347" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75478065" sideWeight="0.504698" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61976045" sideWeight="0.504698" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Line Counter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38831967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Line Counter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35630342" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44768068" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27831715" sideWeight="0.49530202" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889345" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17895299" sideWeight="0.49385247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846004" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28694713" sideWeight="0.50614756" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -767,7 +782,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -776,380 +791,398 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/Format.java">
+    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XLabel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/AnalysisPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="94" column="82" selection-start-line="94" selection-start-column="82" selection-end-line="94" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/graph/GraphItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="140" column="28" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/graph/GraphFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/StatisticPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/FitnessPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/ComponentLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponentModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/TerrainComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/SpeedComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/TimeComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/DateComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XFrameBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usr/news.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="316" column="7" selection-start-line="316" selection-start-column="7" selection-end-line="316" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usr/recipes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/img/export.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/NutritionPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usr/recipes/Sample.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipeViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/tree/XFileTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/tree/XDefaultMutableTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XCalendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PanelModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/XMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/database/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="300">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/NavigationBar.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/DatabaseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="420">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#1421#1422#0" expanded="false" />
+            <element signature="e#1486#1487#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/tools/ToolNode.java">
+    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="225">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/AccountManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#477#478#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pp.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#738#739#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.png" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="630">
           <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/tools/PlugInLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="585">
+          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MainFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/DragnDrop/DropTargetHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/DragnDrop/DragnDropPane.java" />
+    <entry file="file://$PROJECT_DIR$/src/SwingX/components/tree/XDefaultMutableTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/WebCamPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/news/NewsFeedPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/dataConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="2535">
+          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/news/NewsItemFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        <state relative-caret-position="450">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/tools/ToolPanel.java">
+    <entry file="file://$PROJECT_DIR$/usr/dataconfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/DataPanel.java">
+    <entry file="file://$PROJECT_DIR$/usr/news.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/DataEntryFrameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwingX/borders/RoundedBorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/NavigationBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/Backup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="class#1462:3798" expanded="false" />
-            <element signature="e#3822#3988#0" expanded="false" />
-            <element signature="e#3987#3988#0" expanded="false" />
-            <element signature="class#5029:6517" expanded="false" />
-            <element signature="e#7539#7547#0" expanded="false" />
-            <element signature="e#9410#9411#0" expanded="false" />
-            <element signature="e#9442#9443#0" expanded="false" />
-            <element signature="e#13640#13641#0" expanded="false" />
-            <element signature="e#13705#13706#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwingX/components/XTabbedPane.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/ProfilePictureUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="1770">
+          <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/CloudPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="88" column="70" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#234#235#0" expanded="false" />
-            <element signature="e#256#257#0" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-            <element signature="e#556#557#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usr/recipes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/database/ConnectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="405">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/database/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/news/NewsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/components/InfoLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/Uploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipesPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usr/recipes/Sample.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwingX/components/tree/XFileTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/fitness/DataPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1334">
+          <caret line="203" column="39" selection-start-line="203" selection-start-column="39" selection-end-line="203" selection-end-column="39" />
+          <folding>
+            <marker date="1470253180591" expanded="false" signature="7869:7877" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanelBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1201">
+          <caret line="126" column="37" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usr/recipes/Recipe.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/recipe/RecipePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="143" column="67" selection-start-line="143" selection-start-column="67" selection-end-line="143" selection-end-column="67" />
+          <folding>
+            <element signature="e#5744#5745#0" expanded="true" />
+            <element signature="e#5792#5793#0" expanded="true" />
+            <element signature="e#6262#6263#0" expanded="true" />
+            <element signature="e#6327#6328#0" expanded="true" />
+            <element signature="e#6380#6381#0" expanded="true" />
+            <element signature="e#6446#6447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/news/NewsFeedPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/email/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/SignUpPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="111" column="43" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
+          <folding>
+            <element signature="e#4575#4576#0" expanded="true" />
+            <element signature="e#4625#4626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="92" column="56" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newPP.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resized.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/LoginPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/cloud/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/news/NewsItemFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/ComponentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/DistanceComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/data/dataentry/components/TerrainComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/nutrition/NutritionPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/utilities/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1221,6 +1254,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>gnujaxp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -9,6 +9,7 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -27,7 +28,7 @@ public class DataEntryFrameFactory {
             DocumentBuilder docBuilder = (DocumentBuilderFactory.newInstance())
                     .newDocumentBuilder();
 
-            Document doc = docBuilder.parse(DataEntryFrameFactory.class.getResourceAsStream("dataConfig.xml"));
+            Document doc = docBuilder.parse(new File("usr/dataconfig.xml"));
             doc.normalize();
 
             Node rootNode = doc.getDocumentElement();

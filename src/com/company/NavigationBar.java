@@ -4,17 +4,20 @@ package com.company;
 import SwingX.XMain;
 import SwingX.components.XButton;
 import SwingX.components.XToolBar;
+import com.company.cloud.*;
 import com.company.tools.ToolPanel;
 import com.company.fitness.FitnessPanel;
 import com.company.nutrition.NutritionPanel;
 import com.company.news.NewsFeedPanel;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+
 
 /**
  * 
@@ -24,9 +27,6 @@ import javax.swing.*;
  * 
  * <h1>Navigation Bar</h1>
  * <p></p>
- * 
- * <h2>Notes</h2>
- * <p>Design Pattern: Singleton</p>
  * 
  */
 
@@ -44,6 +44,7 @@ public class NavigationBar extends XToolBar{
     }
     
     public void init(){
+
         setBackground(Color.WHITE);
         setTransparent(false);
         setMargin(new Insets(0,0,0,0));
@@ -184,13 +185,44 @@ public class NavigationBar extends XToolBar{
             //mainFrame.setContent(calculatorPanel);
         });
 
-        /*
-        XButton testBtn = new XButton("Test");
+
+        BufferedImage cloudIcon = null;
+        try {
+            cloudIcon = ImageIO.read(Main.class.getResource
+                    ("img/cloud.png"));
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+        XButton cloudBtn = new XButton("");
+        cloudBtn.setTransparent(true);
+        cloudBtn.setHoverEffect(Color.LIGHT_GRAY);
+        cloudBtn.setIcon(new ImageIcon(cloudIcon));
+        cloudBtn.setToolTipText("Cloud");
+        cloudBtn.addActionListener((ActionEvent evt) -> {
+            MainFrame mainFrame = Main.getMainFrame();
+            LoginPanel loginPanel = LoginPanel.getInstance();
+            mainFrame.setContent(loginPanel);
+        });
+
+        URL url = Main.class.getResource("img/loadingRing.gif");
+        ImageIcon imageIcon = new ImageIcon(url);
+        JLabel label = new JLabel(imageIcon);
+
+        XButton testBtn = new XButton("test");
         testBtn.setHoverEffect(Color.LIGHT_GRAY);
         testBtn.addActionListener((ActionEvent evt) -> {
+            /*
+            ProfilePictureUpdater profilePictureUpdater = new ProfilePictureUpdater();
+            Thread ppThread = new Thread(profilePictureUpdater);
+            ppThread.start();
+
+            FileChooser fileChooser = new FileChooser("Choose a file");
+            File file = fileChooser.showFileChooser();
+            System.out.println(file.getAbsolutePath());
+            */
 
         });
-        */
 
         add(newsFeedBtn);
         add(runBtn);
@@ -199,6 +231,7 @@ public class NavigationBar extends XToolBar{
         add(toolsBtn);
         add(nutritionBtn);
         add(settingsBtn);
+        add(cloudBtn);
         //add(testBtn);
     }
 

@@ -51,7 +51,7 @@ public class InfoLabel extends JLabel {
     }
 
     private void init(){
-        setFont(new Font(this.getName(), Font.PLAIN, 20));
+        setFont(new Font(this.getName(), Font.PLAIN, 15));
         //setIcon(new ImageIcon(imageIcon));
     }
 }

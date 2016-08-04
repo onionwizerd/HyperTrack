@@ -1,32 +1,22 @@
 package com.company.news;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.ConnectException;
-import java.net.URL;
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/**
- *
- * @author Josh Beaver
- * @version 0.1
- * @since 2016-03-16
- *
- * <h1>News Item Factory</h1>
- * <p></p>
- *
- */
+import javax.imageio.ImageIO;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 
+/**
+ * Created by josh on 2016/07/31.
+ */
 public class NewsItemFactory {
 
     private boolean hasNext = true;
@@ -57,8 +47,8 @@ public class NewsItemFactory {
 
             Node verNode = rootElement.getElementsByTagName("version").item(0);
             Element verElement = (Element) verNode;
-            String ver = verElement.getTextContent();
-            System.out.println(ver);
+//            String ver = verElement.getTextContent();
+ //           System.out.println(ver);
 
             currentItem = 0;
             totalItems = postList.getLength();
@@ -85,24 +75,24 @@ public class NewsItemFactory {
 
         Node titleNode = postElement.getElementsByTagName("title").item(0);
         Element titleElement = (Element)titleNode;
-        String title = titleElement.getTextContent();
+        String title = titleElement.getAttribute("text");
 
         Node imageNode = postElement.getElementsByTagName("image").item(0);
         Element imageElement = (Element)imageNode;
         BufferedImage image = null;
         try{
-            image = ImageIO.read((new URL(imageElement.getTextContent())));
+                image = ImageIO.read((new URL(imageElement.getAttribute("text"))));
         }catch(IOException ioExcep){
             ioExcep.printStackTrace();
         }
 
         Node descNode = postElement.getElementsByTagName("desc").item(0);
         Element descElement = (Element)descNode;
-        String desc = descElement.getTextContent();
+        String desc = descElement.getAttribute("text");
 
         Node urlNode = postElement.getElementsByTagName("url").item(0);
         Element urlElement = (Element)urlNode;
-        String url = urlElement.getTextContent();
+        String url = urlElement.getAttribute("text");
 
         NewsItem newsItem = new NewsItem(title, desc, url, image);
 
@@ -141,4 +131,3 @@ public class NewsItemFactory {
         this.hasNext = hasNext;
     }
 }
-

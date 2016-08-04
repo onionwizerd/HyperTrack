@@ -1,7 +1,7 @@
 <root>
     <recipe>
-        <title></title>
-        <description></description>
+        <title text=""/>
+        <description text="">
         <content></content>
     </recipe>
 </root>

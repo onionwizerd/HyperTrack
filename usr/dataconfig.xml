@@ -1,6 +1,7 @@
 <data>
     <Running>
         <terrains>
+            <terrain name="Default"/>
             <terrain name="Road"/>
             <terrain name="Off Road"/>
             <terrain name="Track"/>
@@ -9,13 +10,16 @@
 
     <Cycling>
         <terrains>
+            <terrain name="Default"/>
             <terrain name="Road"/>
             <terrain name="Off Road"/>
         </terrains>
     </Cycling>
 
     <Swimming>
-        <terrains></terrains>
+        <terrains>
+
+        </terrains>
     </Swimming>
 
 
