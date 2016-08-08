@@ -15,7 +15,14 @@ public class ImageUtil {
     public ImageUtil() {
     }
 
-    public File resizeImage(File image, int width, int height){
+
+    /**
+     * Resize an image
+     * @param image The BufferedImage to be manipulated
+     * @param height The desired height of the image
+     * @param width The desired width of the image
+     */
+    public static File resizeImage(File image, int width, int height){
         File newImage = new File("resized.jpg");
 
         try{
@@ -36,7 +43,7 @@ public class ImageUtil {
         return newImage;
     }
 
-    private BufferedImage compressImage(BufferedImage originalImage, int type, int width, int height){
+    private static BufferedImage compressImage(BufferedImage originalImage, int type, int width, int height){
         BufferedImage resizedImage = new BufferedImage(width, height, type);
         Graphics2D g = resizedImage.createGraphics();
         g.drawImage(originalImage, 0, 0, width, height, null);
@@ -46,10 +53,11 @@ public class ImageUtil {
     }
 
     /**
-     * Round the corners of a given image
-     * @param image The BufferedImage that will be returned with rounded corners
+     * Round the corners of an image
+     * @param image The BufferedImage to be manipulated
      * @param cornerRadius The degree to which the corners will be rounded. A higher number will result in more rounded
      *                     corners
+     * @return BufferedImage with rounded corners
      */
     public static BufferedImage roundCorners(BufferedImage image, int cornerRadius) {
         int w = image.getWidth();
