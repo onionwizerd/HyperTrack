@@ -1,0 +1,29 @@
+<recipe>
+
+    <title text="Quinoa and Black Beans"/>
+    <time text=" 50 m"/>
+    <servings text="10 servings" />
+    <calories text="153 calories" />
+    <diet text="Vegan"/>
+
+    <ingredients>
+        <item text="1 tsp vegetable oil" />
+        <item text="1 onion, chopped" />
+        <item text="3 cloves garlic, chopped " />
+        <item text="3/4 cup quinoa" />
+        <item text="1 1/2 cups vegetable broth" />
+        <item text="1 teaspoon ground cumin" />
+        <item text="1/4 teaspoon cayenne pepper" />
+        <item text="salt and ground black pepper to taste" />
+        <item text="1 cup frozen corn kernels" />
+        <item text="2 (15 ounce) cans black beans, rinsed and drained" />
+        <item text="1/2 cup chopped fresh cilantro" />
+    </ingredients>
+
+    <directions>
+        <item text="1. Heat oil in a saucepan over medium heat; cook and stir onion and garlic until lightly browned, about 10 minutes."/>
+        <item text="2. Mix quinoa into onion mixture and cover with vegetable broth; season with cumin, cayenne pepper, salt, and pepper. Bring the mixture to a boil. Cover, reduce heat, and simmer until quinoa is tender and broth is absorbed, about 20 minutes." />
+        <item text="Stir frozen corn into the saucepan, and continue to simmer until heated through, about 5 minutes; mix in the black beans and cilantro." />
+    </directions>
+
+</recipe>

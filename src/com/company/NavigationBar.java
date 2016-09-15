@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Josh Beaver
+ * @version 1.0
+ * @since 2016-03-16
+ *
+ */
 
 package com.company;
 
@@ -17,18 +24,6 @@ import java.io.IOException;
 import java.net.URL;
 import javax.imageio.ImageIO;
 import javax.swing.*;
-
-
-/**
- * 
- * @author Josh Beaver
- * @version 0.1
- * @since 2016-03-16
- * 
- * <h1>Navigation Bar</h1>
- * <p></p>
- * 
- */
 
 public class NavigationBar extends XToolBar{
 
@@ -212,15 +207,11 @@ public class NavigationBar extends XToolBar{
         XButton testBtn = new XButton("test");
         testBtn.setHoverEffect(Color.LIGHT_GRAY);
         testBtn.addActionListener((ActionEvent evt) -> {
-            /*
+
             ProfilePictureUpdater profilePictureUpdater = new ProfilePictureUpdater();
             Thread ppThread = new Thread(profilePictureUpdater);
             ppThread.start();
 
-            FileChooser fileChooser = new FileChooser("Choose a file");
-            File file = fileChooser.showFileChooser();
-            System.out.println(file.getAbsolutePath());
-            */
 
         });
 
@@ -232,7 +223,7 @@ public class NavigationBar extends XToolBar{
         add(nutritionBtn);
         add(settingsBtn);
         add(cloudBtn);
-        //add(testBtn);
+        add(testBtn);
     }
 
     

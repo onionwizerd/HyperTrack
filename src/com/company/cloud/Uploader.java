@@ -14,7 +14,7 @@ public class Uploader extends FtpAdapter {
 
     public void upload(File uploadDirectory){
 
-        Ftp ftp = new Ftp("192.168.1.117", "josh", "cronzo01500");
+        Ftp ftp = new Ftp("brinlee.ddns.net", "ftpuser", "topkek");
         ftp.setDebug(true);
         ftp.setTimeout(10000);
 

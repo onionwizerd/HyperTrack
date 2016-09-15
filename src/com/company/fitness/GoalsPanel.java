@@ -14,6 +14,8 @@ public class GoalsPanel extends XScrollPanel implements PanelModel {
 
     private XPanel viewPortPanel;
 
+    private FitnessPanel parentPanel;
+
     public GoalsPanel() {
         init();
     }
@@ -30,5 +32,9 @@ public class GoalsPanel extends XScrollPanel implements PanelModel {
         setViewportView(viewPortPanel);
 
 
+    }
+
+    public void setParentPanel(FitnessPanel parentPanel){
+        this.parentPanel = parentPanel;
     }
 }

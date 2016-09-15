@@ -1,0 +1,26 @@
+<recipe>
+
+    <title text="Sample"/>
+    <time text="20 Minutes"/>
+    <servings text="2 Servings" />
+    <calories text="320 Calories" />
+    <diet text="Vegan, Halaal"/>
+
+    <ingredients>
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="2 Lemons" />
+        <item text="3 Tblspn Cinnamon" />
+    </ingredients>
+
+    <directions>
+        <item text="Chop the lemons"/>
+        <item text="Sprinkle the cinnamon on the lemons" />
+    </directions>
+
+</recipe>

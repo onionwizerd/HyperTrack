@@ -1,7 +1,7 @@
 package com.company.graph;
 
 import com.company.database.DatabaseManager;
-import com.company.data.CategoryType;
+import com.company.fitness.data.CategoryType;
 import org.jfree.data.category.DefaultCategoryDataset;
 
 import java.sql.*;
@@ -22,11 +22,16 @@ public class GraphFactory {
     private ResultSet resultSet;
     private PreparedStatement preparedStatement;
 
+    private String searchTerm;
+
+
     public GraphFactory(String tableName) {
         this.tableName = tableName;
 
         try {
+
             connection = DatabaseManager.getInstance().getConnectionManager().getConnection();
+
 
             preparedStatement = connection.prepareStatement("SELECT * FROM " + tableName
                     + " ORDER BY date");
@@ -92,6 +97,8 @@ public class GraphFactory {
 
         try {
 
+            preparedStatement = connection.prepareStatement("SELECT * FROM " + tableName + searchTerm
+                    + " ORDER BY date");
             resultSet = preparedStatement.executeQuery();
 
             switch (categoryType){
@@ -145,6 +152,11 @@ public class GraphFactory {
         formattedTime = Double.parseDouble(df.format(formattedTime));
 
         return formattedTime;
+    }
+
+    public void setSearchTerm(String searchTerm) {
+        this.searchTerm = searchTerm;
+        System.out.println("Set search term in graph factory: " + searchTerm);
     }
 
 }

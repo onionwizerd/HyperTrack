@@ -13,6 +13,8 @@ public class FitnessPanel extends XTabbedPane implements PanelModel{
     private AnalysisPanel analysisPanel;
     private DataPanel dataPanel;
     private GoalsPanel goalsPanel;
+    private SettingsPanel settingsPanel;
+
     private String tableName;
 
     public FitnessPanel(String tableName) {
@@ -28,13 +30,21 @@ public class FitnessPanel extends XTabbedPane implements PanelModel{
         setUI();
 
         analysisPanel = new AnalysisPanel(tableName);
-        dataPanel = new DataPanel(tableName);
-        goalsPanel = new GoalsPanel();
+        analysisPanel.setParentPanel(this);
 
+        dataPanel = new DataPanel(tableName);
+        dataPanel.setParentPanel(this);
+
+        goalsPanel = new GoalsPanel();
+        goalsPanel.setParentPanel(this);
+
+        settingsPanel = new SettingsPanel(tableName);
+        settingsPanel.setParentPanel(this);
 
         add("Data", dataPanel);
         add("Analysis", analysisPanel);
         add("Goals", goalsPanel);
+        add("Settings", settingsPanel);
 
         setOpaque(true);
 
@@ -44,4 +54,15 @@ public class FitnessPanel extends XTabbedPane implements PanelModel{
         analysisPanel.updateGraphs();
     }
 
+    public AnalysisPanel getAnalysisPanel() {
+        return analysisPanel;
+    }
+
+    public DataPanel getDataPanel() {
+        return dataPanel;
+    }
+
+    public GoalsPanel getGoalsPanel() {
+        return goalsPanel;
+    }
 }

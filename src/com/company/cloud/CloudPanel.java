@@ -42,7 +42,7 @@ public class CloudPanel extends XPanel implements PanelModel{
 
         BufferedImage profilePicture = null;
         try {
-            profilePicture = ImageIO.read(new File("pp.jpg"));
+            profilePicture = ImageIO.read(new File("pp1.jpg"));
         }catch (IOException e){
             e.printStackTrace();
         }

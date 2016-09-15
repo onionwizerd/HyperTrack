@@ -4,7 +4,7 @@ import SwingX.components.XDivider;
 import SwingX.components.XPanel;
 import SwingX.components.XScrollPanel;
 import com.company.PanelModel;
-import com.company.data.CategoryType;
+import com.company.fitness.data.CategoryType;
 import com.company.graph.GraphFactory;
 import com.company.graph.GraphItem;
 
@@ -31,6 +31,10 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
 
     private ArrayList<GraphItem> graphItems = new ArrayList<>();
 
+    private String searchTerm;
+
+    private FitnessPanel parentPanel;
+
     public AnalysisPanel(String tableName) {
         this.tableName = tableName;
         init();
@@ -41,10 +45,14 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
 
         setBackground(Color.WHITE);
 
+        searchTerm = "";
+
+
         viewPortPanel = new XPanel();
         viewPortPanel.setLayout(new BoxLayout(viewPortPanel, BoxLayout.Y_AXIS));
 
         graphFactory = new GraphFactory(tableName);
+        graphFactory.setSearchTerm(searchTerm);
 
         distanceGraph = graphFactory.createGraphItem("Distance", "distance", CategoryType.DOUBLE ,"Date (YYYY-MM-DD)",
                 "Distance (Km)");
@@ -77,6 +85,8 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
         for(GraphItem graphItem : graphItems){
             graphFactory.updateGraphItem(graphItem, graphItem.getCategory(), graphItem.getCategoryType());
         }*/
+
+        graphFactory.setSearchTerm(searchTerm);
 
         graphFactory.updateGraphItem(distanceGraph, "distance", CategoryType.INT);
         graphFactory.updateGraphItem(timeGraph, "time", CategoryType.TIME);
@@ -111,4 +121,14 @@ public class AnalysisPanel extends XScrollPanel implements PanelModel{
 
         statisticsPanel.refresh();
     }
+
+    public void setSearchTerm(String searchTerm) {
+        this.searchTerm = searchTerm;
+        System.out.println("Set search term");
+    }
+
+    public void setParentPanel(FitnessPanel parentPanel){
+        this.parentPanel = parentPanel;
+    }
+
 }

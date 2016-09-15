@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Aug 22 18:21:04 SAST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0156-b30e-267e-000006c40f68 
+on database directory /home/josh/Documents/GitHub/HyperTrack/out/artifacts/HyperTrack_jar/usr/database with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/home/josh/Documents/GitHub/HyperTrack/out/artifacts/HyperTrack_jar/HyperTrack.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=/home/josh/Documents/GitHub/HyperTrack/out/artifacts/HyperTrack_jar
+os.name=Linux
+os.arch=amd64
+os.version=4.4.0-34-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

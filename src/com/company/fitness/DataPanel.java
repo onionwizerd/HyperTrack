@@ -6,10 +6,10 @@ import SwingX.components.XPanel;
 import SwingX.components.XScrollPanel;
 import SwingX.components.table.XTable;
 import com.company.PanelModel;
-import com.company.data.dataentry.DataEntryFrame;
-import com.company.data.Format;
-import com.company.data.RecordContextMenu;
-import com.company.data.dataentry.DataEntryFrameFactory;
+import com.company.fitness.data.dataentry.DataEntryFrame;
+import com.company.fitness.data.Format;
+import com.company.fitness.data.RecordContextMenu;
+import com.company.fitness.data.dataentry.DataEntryFrameFactory;
 import com.company.database.DatabaseManager;
 
 import javax.swing.*;
@@ -19,13 +19,11 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * Created by Josh on 4/30/2016.
  */
-public class DataPanel extends XPanel implements PanelModel{
+public class DataPanel extends XPanel implements PanelModel, FitnessPanelModel{
 
     private DefaultTableModel dataModel;
     private XTable dataTable;
@@ -35,6 +33,9 @@ public class DataPanel extends XPanel implements PanelModel{
     private Connection connection;
 
     private Format formatter = new Format();
+
+    private FitnessPanel parentPanel;
+
 
     public DataPanel(String tableName) {
         this.tableName = tableName;
@@ -122,7 +123,7 @@ public class DataPanel extends XPanel implements PanelModel{
                 "Speed (KM/H)", "ID", "Terrain"};
         dataModel.setColumnIdentifiers(columnHeaders);
 
-        populateDataModel();
+        populateDataModel(null);
 
         // Make ID column invisible
         TableColumnModel columnModel = dataTable.getColumnModel();
@@ -187,8 +188,8 @@ public class DataPanel extends XPanel implements PanelModel{
         });
 
         XButton deleteRecordBtn = new XButton("Delete");
-        deleteRecordBtn.setMinimumSize(new Dimension(70, 50));
-        deleteRecordBtn.setMaximumSize(new Dimension(80, 50));
+        deleteRecordBtn.setMinimumSize(new Dimension(80, 50));
+        deleteRecordBtn.setMaximumSize(new Dimension(90, 50));
         deleteRecordBtn.setMargin(new Insets(0,10,0,10));
         deleteRecordBtn.setBackground(Color.WHITE);
         deleteRecordBtn.setHoverEffect(Color.LIGHT_GRAY);
@@ -260,19 +261,40 @@ public class DataPanel extends XPanel implements PanelModel{
             }
         });
 
+        String[] terrainArray = {"All", "Default", "Off Road", "Track", "Road"};
+
+        JComboBox<String> terrainComboBox = new JComboBox<>(terrainArray);
+        terrainComboBox.setMinimumSize(new Dimension(70, 50));
+        terrainComboBox.setMaximumSize(new Dimension(70, 50));
+        terrainComboBox.setBackground(Color.WHITE);
+        terrainComboBox.addActionListener(e -> {
+            if(terrainComboBox.getSelectedItem().equals("All")){
+                populateDataModel(null);
+                parentPanel.getAnalysisPanel().setSearchTerm("");
+                parentPanel.getAnalysisPanel().updateGraphs();
+            }else {
+                populateDataModel("SELECT * FROM " + tableName + " WHERE terrain='" + terrainComboBox.getSelectedItem()
+                        + "' " + " ORDER BY date DESC");
+                parentPanel.getAnalysisPanel().setSearchTerm(" WHERE terrain='" + terrainComboBox.getSelectedItem()
+                        + "' ");
+                parentPanel.getAnalysisPanel().updateGraphs();
+            }
+        });
+
         XPanel buttonPanel = new XPanel();
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.X_AXIS));
         buttonPanel.add(new XDivider(5, 0));
         buttonPanel.add(addRecordBtn);
         buttonPanel.add(new XDivider(5, 0));
         buttonPanel.add(deleteRecordBtn);
+        buttonPanel.add(new XDivider(5, 0));
+        buttonPanel.add(terrainComboBox);
 
         XPanel northPanel = new XPanel();
         northPanel.setLayout(new BoxLayout( northPanel, BoxLayout.Y_AXIS));
         northPanel.add(new XDivider(0,1));
         northPanel.add(buttonPanel);
         northPanel.add(new XDivider(0,1));
-
 
         add(northPanel, BorderLayout.NORTH);
         add(tablePanel, BorderLayout.CENTER);
@@ -283,7 +305,13 @@ public class DataPanel extends XPanel implements PanelModel{
         return dataModel;
     }
 
-    private void populateDataModel(){
+    private void populateDataModel(String query){
+
+        if(dataModel.getRowCount() > 0){
+            for(int i = dataModel.getRowCount() -1; i > -1; i--){
+                dataModel.removeRow(i);
+            }
+        }
 
         dataModel.setRowCount(0);
         dataTable.revalidate();
@@ -294,8 +322,14 @@ public class DataPanel extends XPanel implements PanelModel{
 
             connection = DatabaseManager.getInstance().getConnectionManager().getConnection();
 
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM " + tableName
-                    + " ORDER BY date DESC");
+            PreparedStatement preparedStatement;
+
+            if(query == null){
+                preparedStatement = connection.prepareStatement("SELECT * FROM " + tableName
+                        + " ORDER BY date DESC");
+            }else {
+                preparedStatement = connection.prepareStatement(query);
+            }
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -351,7 +385,7 @@ public class DataPanel extends XPanel implements PanelModel{
             displayErrorMessage("Unable to insert record \n Exception");
         }
 
-        populateDataModel();
+        populateDataModel(null);
         FitnessPanel fitnessPanel = (FitnessPanel) this.getParent();
         fitnessPanel.update();
 
@@ -379,7 +413,7 @@ public class DataPanel extends XPanel implements PanelModel{
             displayErrorMessage("Unable to update record \n Exception");
         }
 
-        populateDataModel();
+        populateDataModel(null);
         FitnessPanel fitnessPanel = (FitnessPanel) this.getParent();
         fitnessPanel.update();
 
@@ -400,7 +434,7 @@ public class DataPanel extends XPanel implements PanelModel{
             displayErrorMessage("Unable to delete record \n Exception");
         }
 
-        populateDataModel();
+        populateDataModel(null);
         FitnessPanel fitnessPanel = (FitnessPanel) this.getParent();
         fitnessPanel.update();
 
@@ -408,6 +442,11 @@ public class DataPanel extends XPanel implements PanelModel{
 
     private void displayErrorMessage(String errorMessage){
         JOptionPane.showMessageDialog(null, errorMessage);
+    }
+
+    @Override
+    public void setParentPanel(FitnessPanel parentPanel){
+        this.parentPanel = parentPanel;
     }
 
 }
